@@ -237,8 +237,8 @@ background:#ffffff;
 	font-variant: small-caps;
 	font-size: 27px;
      /* ci-dessous ecartement boutons */
-	margin-left: 12px;
-	margin-right: 12px;	
+	margin-left: 20px;
+	margin-right: 20px;	
 }
 #menu-demo2 ul a{
 	padding: 8px 0;
