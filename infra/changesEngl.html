@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Manulex-Infra</title>
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
+      href="resolution_small.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
+      href="resolution_smallsmall.css">
+  </head>
+  <body>
+    <header> <br>
+      <table width="100%" border="0">
+        <tbody>
+          <tr>
+            <td align="left" width="17%">
+              <p class="style-langue"> <a style="text-decoration:none" href="index.html">
+                  Français</a></p>
+            </td>
+            <td align="center" width="69%"><span class="style-titre">Manulex
+                Infra </span></td>
+            <td align="center" width="17%"><img src="images/white.JPG" height="41"
+                width="22"></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <ul id="menu-demo2">
+        <li><a href="../indexEngl.html">Home</a></li>
+        <li><a href="#">Description▼</a>
+          <ul>
+            <li><a href="indexEngl.html">General description</a></li>
+            <li><a href="calculsEngl.html">Understanding Manulex-infra</a></li>
+            <li><a href="phonetiqueEngl.html">Phonetic codes</a></li>
+            <li><a href="changesEngl.html">Changes to ver.1</a></li>
+          </ul>
+        </li>
+        <li><a href="telechargementEngl.html">Download</a></li>
+      </ul>
+    </header>
+    <main></main>
+    <footer></footer>
+    <article> <br>
+      <h6> <a> </a></h6>
+      <titrepage>
+        <h1>Major changes in Manulex_Infra version 2</h1>
+      </titrepage>
+      <p>• Separate G-Ph and Ph-G segmentations. In version 1 of Manulex_Infra,
+        the description of the grapho-phonological associations was mainly
+        thought in the reading direction, from grapheme to phoneme. The same
+        associations were then used to analyze the associations between phonemes
+        and graphemes (writing direction). However, this procedure causes
+        problems especially -though not exclusively- when the words include
+        silent letters. It should be remembered that the notion of consistency
+        refers, in the case of Ph-G associations, to the probability of
+        producing a particular grapheme from a given phoneme. When the phoneme
+        is said to be 'silent' (silent letter), the speech signal cannot lead to
+        the production of a silent letter and the descriptions of the
+        associations must therefore be distinguished according to whether we are
+        considering reading (G-Ph) or spelling (Ph-G). This is done in version 2
+        (see tab 'Understanding Manulex_Infra).<br>
+        <br>
+        • Version 2 includes additional analyses on the consistency and the
+        frequency of grapho-phonological associations on the final rime unit of
+        words<br>
+        <br>
+        • Additional analyses on lexemes (lemmas) are added (see tab
+        'Understanding Manulex_Infra)<br>
+        <br>
+        • For each word, the least consistent G-Ph or Ph-G association, and of
+        the least frequent association are mentioned. Note that the least
+        consistent association is not necessarily the least frequent
+        association, and vice-versa. <br>
+        <br>
+        • Modifications/corrections of several phonological codes, graphemic and
+        phonological segmentations<br>
+        <br>
+        • Removal of the distinction between the two 'a's (/a/ of 'patte' and
+        /ɑ/ of 'pâte') when computing G-Ph consistency<br>
+        <br>
+        • Words including the grapheme 'ai' (e. g., 'maison', 'lainage') can
+        frequently be pronounced with the phoneme /E/ or the phoneme /e/. The
+        consistency of the G-Ph association no longer takes this distinction
+        into account. <br>
+        <br>
+        • Introduction of the distinctions between the 'e' grapheme when
+        obligatorily pronounced (compulsory schwa), always silent, or
+        corresponding to an optional schwa (see 'phonetic codes' tab) <br>
+        <br>
+        • Modifications of the syllabic segmentation of words in accordance with
+        the coding of the ‘e’ as silent/optional or corresponding to a
+        compulsory schwa <br>
+        <br>
+        • The G-Ph consistency for 'e' with optional schwa ('reste', 'perle') is
+        set to 100 since the 'e' may or may not be pronounced. <br>
+        <br>
+        • In the case of Ph-G associations, the silent letters in internal
+        position (e.g. 'm' in 'autumn', 'p' in 'baptism') are not predictable
+        from the speech signal, and the Ph-G consistency is therefore set to
+        zero<br>
+        <br>
+        • Case of 'e' followed by two identical consonants. The modification
+        results from the observation that words like 'femme' or 'solennel'
+        appear as regular-consistent words in version 1 of Manulex_Infra. This
+        is due to the particular coding of 'emm' and 'enn' as a graphemic group
+        whereas the 'e' followed by other doublets were coded separately from
+        the following consonants (e.g. 'e.rr' in 'terre' but 'emm' in 'femme').
+        The coding, in the reading direction, is standardized by coding the 'e'
+        followed by two identical consonants as .e[CC]. (with 'CC' meaning 2
+        identical consonants). The word 'femme' is now coded as 'f.e[CC].mm.e'.
+        Its low consistency value results from the fact that 'e' followed by a
+        doublet is usually pronounced /e/ or /E/. This particular coding is only
+        realized for G-Ph associations, not for Ph-G associations since, in
+        French, there is no indication of the presence of a doublet in the
+        speech signal. The coding of G-Ph associations with 'e[CC]' applies to
+        all words in order to highlight inconsistencies (thus also to words such
+        as 'ennui' coded 'e[CC]-@.nn-n.ui-8i') <br>
+        <br>
+        • Case of words including -eill or -eil not preceded by 'u' (e. g.,
+        'abeille', 'bienveillant', 'sommeil'). The coding has been modified in
+        'eil' or 'eill'. In these groups the sequence 'ill' is always associated
+        with the semi-vowel /j/, never with the consonant /l/<br>
+        <br>
+        • The finals of verbs in -ent are, in the reading direction (G-Ph),
+        segmented 'en.t' in the version 2 of Manulex-infra. This segmentation is
+        comparable to that of the forms in '-ant', '-ont', '-ons', ..., (an .t,
+        on.t, on.s) <br>
+        <br>
+        • In order to eliminate some rare G-Ph or Ph-G associations, proper
+        names are excluded from the analyses. Words of foreign origin, mainly
+        English, are kept in the absence of clear criteria allowing the
+        exclusion of some of them and the conservation of others</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr> <br>
+      <br>
+      <br>
+      <br>
+    </article>
+    <br>
+    <br>
+  </body>
+</html>

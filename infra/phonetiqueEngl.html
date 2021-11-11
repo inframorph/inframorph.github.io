@@ -4,11 +4,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Manulex-Infra</title>
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
       href="resolution_small.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
       href="resolution_smallsmall.css">
   </head>
   <body>
@@ -22,8 +20,7 @@
             </td>
             <td align="center" width="69%"><span class="style-titre">Manulex
                 Infra </span></td>
-            <td align="center" width="17%"><img src="images/white.JPG" height="41"
-
+            <td align="center" width="17%"><img src="images/white.JPG" height="41"
                 width="22"></td>
           </tr>
         </tbody>
@@ -35,9 +32,8 @@
           <ul>
             <li><a href="indexEngl.html">General description</a></li>
             <li><a href="calculsEngl.html">Understanding Manulex-infra</a></li>
-            <li><a href="phonetiqueEngl.html">Phonetic Codes</a></li>
-            <li><a href="syllabeEngl.html">Syllables</a></li>
-            <li><a href="graphemeEngl.html">Graphemes</a></li>
+            <li><a href="phonetiqueEngl.html">Phonetic codes</a></li>
+            <li><a href="changesEngl.html">Changes to ver.1</a></li>
           </ul>
         </li>
         <li><a href="telechargementEngl.html">Download</a></li>
@@ -50,216 +46,245 @@
       <titrepage>
         <h1>Phonetic codes</h1>
       </titrepage>
-      <p> Phonetic codes corresponding to standard computer characters were used
-        to ensure compatibility across platforms. The IPA values corresponding
-        to the computer characters are given below. Note that a hatch mark (#)
-        is also used in grapheme-phoneme mappings to indicate a silent grapheme
-        (e.g., the grapheme "t" at the end of a word when not pronounced, as in
-        the word "fort" / fOR /). </p>
+      <p>A standard code has been created to refer to the phonetic symbols of
+        the International Phonetic Alphabet (IPA). Equivalency between IPA
+        symbols and the database standard code is provided below.<br>
+        <br>
+        Two important points need to be considered:<br>
+        <br>
+        • Dash (#) is used to tag a silent grapheme in correspondences. “t” at
+        the end of “fort”, "p" in the word "baptême", “e” at the end of “fée”
+        and “année” are all silent graphemes).<br>
+        <br>
+        • However, the silent “e” falls into different categories that are
+        tagged distinctly:</p>
+      <p class="retrait"> - <b>Compulsory schwa</b>: &lt;e&gt; coded &lt;%&gt;.
+        In French, schwa in words is pronounced in three cases. 1) At the end of
+        a word, when located after a consonant cluster of increasing sonority as
+        in “souple” (occlusive + liquid consonants) or “chèvre” (fricative +
+        liquid); 2) In the middle of a word, when located both after a consonant
+        cluster and before a consonant (i.e. the three consonants rule), as in
+        “appartement” or “vendredi”; 3) In the first syllable of a word whenever
+        its deletion would lead to the creation of a phototactically illegal
+        consonant cluster as in “renard”, “leçon” or “ceci” (/rn/, /ls/ and /ss/
+        are phototactically illegal consonant clusters in French). <br>
+        <br>
+        - <b>Silent &lt;e&gt;</b> coded &lt;#&gt;: &lt;e&gt; is always silent
+        after a vowel, when it marks a morphological inflection, as in “amie” or
+        not (as in “foie”). <br>
+        <br>
+        - <b>Optional schwa</b>: &lt;e&gt; coded &lt;°&gt;. This case includes
+        all occurrences of &lt;e&gt;/schwa that do not fall within the rules
+        described above. <br>
+        <br>
+      </p>
       <br>
       <br>
-      <br>
-      <table width="590" cellspacing="0" cellpadding="0" border="0">
-        <colgroup><col width="80" span="2"> <col width="184"> <col width="80"
-
-            span="2"> <col width="312"> </colgroup>
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <colgroup><col width="80" span="2"> <col width="184"> <col width="80"
+            span="3"> </colgroup>
         <tbody>
           <tr>
-            <td align="center" width="61" bgcolor="#C0C0C0"><b>IPA</b></td>
-            <td align="center" width="55" bgcolor="#C0C0C0"><b>Code</b></td>
-            <td width="155" bgcolor="#C0C0C0"><b>Exemples</b></td>
+            <td align="center" width="54" bgcolor="#C0C0C0"><b>IPA</b></td>
+            <td align="center" width="49" bgcolor="#C0C0C0"><b>Code</b></td>
+            <td width="159" bgcolor="#C0C0C0"><b>Examples</b></td>
             <td align="center" width="67" bgcolor="#C0C0C0"><b>IPA</b></td>
-            <td align="center" width="67" bgcolor="#C0C0C0"><b>Code</b></td>
-            <td width="185" bgcolor="#C0C0C0"><b>Exemples</b></td>
+            <td align="center" width="69" bgcolor="#C0C0C0"><b>Code</b></td>
+            <td width="215" bgcolor="#C0C0C0"><b>Examples</b></td>
           </tr>
           <tr>
-            <td colspan="2">Voyelles orales</td>
-            <td>&nbsp;</td>
-            <td>Consonnes</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
+            <td colspan="2" bgcolor="#FFFFFF">Oral Vowels</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">Consonants</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
           </tr>
           <tr>
-            <td align="center">i</td>
-            <td align="center">i</td>
-            <td>iris, vie, lys</td>
-            <td colspan="2">Consonnes occlusives</td>
-            <td>&nbsp;</td>
+            <td align="center" bgcolor="#FFFFFF">i</td>
+            <td align="center" bgcolor="#FFFFFF">i</td>
+            <td bgcolor="#FFFFFF">iris, vie, lys</td>
+            <td colspan="2" bgcolor="#FFFFFF">Stop consonants</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
           </tr>
           <tr>
-            <td align="center">u</td>
-            <td align="center">u</td>
-            <td>ours, loup</td>
-            <td align="center">p</td>
-            <td align="center">p</td>
-            <td>pin, loupe, appel</td>
+            <td align="center" bgcolor="#FFFFFF">u</td>
+            <td align="center" bgcolor="#FFFFFF">u</td>
+            <td bgcolor="#FFFFFF">ours, loup</td>
+            <td align="center" bgcolor="#FFFFFF">p</td>
+            <td align="center" bgcolor="#FFFFFF">p</td>
+            <td bgcolor="#FFFFFF">pin, loupe, appel</td>
           </tr>
           <tr>
-            <td align="center">y</td>
-            <td align="center">y</td>
-            <td>une, lune</td>
-            <td align="center">t</td>
-            <td align="center">t</td>
-            <td>terre, vite, attaque</td>
+            <td align="center" bgcolor="#FFFFFF">y</td>
+            <td align="center" bgcolor="#FFFFFF">y</td>
+            <td bgcolor="#FFFFFF">une, lune</td>
+            <td align="center" bgcolor="#FFFFFF">t</td>
+            <td align="center" bgcolor="#FFFFFF">t</td>
+            <td bgcolor="#FFFFFF">terre, vite, attaque</td>
           </tr>
           <tr>
-            <td align="center">e</td>
-            <td align="center">e</td>
-            <td>égal, nez</td>
-            <td align="center">k</td>
-            <td align="center">k</td>
-            <td>col, accord, qui, coq, kilo</td>
+            <td align="center" bgcolor="#FFFFFF">e</td>
+            <td align="center" bgcolor="#FFFFFF">e</td>
+            <td bgcolor="#FFFFFF">égal, nez</td>
+            <td align="center" bgcolor="#FFFFFF">k</td>
+            <td align="center" bgcolor="#FFFFFF">k</td>
+            <td bgcolor="#FFFFFF">col, accord,qui, coq, kilo</td>
           </tr>
           <tr>
-            <td align="center">ɛ</td>
-            <td align="center">E</td>
-            <td>lève, aile, jouet</td>
-            <td align="center">b</td>
-            <td align="center">b</td>
-            <td>brosse, cube</td>
+            <td align="center" bgcolor="#FFFFFF">ɛ</td>
+            <td align="center" bgcolor="#FFFFFF">E</td>
+            <td bgcolor="#FFFFFF">lève, aile, jouet</td>
+            <td align="center" bgcolor="#FFFFFF">b</td>
+            <td align="center" bgcolor="#FFFFFF">b</td>
+            <td bgcolor="#FFFFFF">brosse, cube</td>
           </tr>
           <tr>
-            <td align="center">a</td>
-            <td align="center">a</td>
-            <td>adulte, table</td>
-            <td align="center">d</td>
-            <td align="center">d</td>
-            <td>danse, aide, addition</td>
+            <td align="center" bgcolor="#FFFFFF">a</td>
+            <td align="center" bgcolor="#FFFFFF">a</td>
+            <td bgcolor="#FFFFFF">adulte, table</td>
+            <td align="center" bgcolor="#FFFFFF">d</td>
+            <td align="center" bgcolor="#FFFFFF">d</td>
+            <td bgcolor="#FFFFFF">danse, aide, addition</td>
           </tr>
           <tr>
-            <td align="center">ɑ</td>
-            <td align="center">A</td>
-            <td>âne, âge</td>
-            <td align="center">g</td>
-            <td align="center">g</td>
-            <td>gare, guide, bague, toboggan</td>
+            <td align="center" bgcolor="#FFFFFF">ɑ</td>
+            <td align="center" bgcolor="#FFFFFF">A</td>
+            <td bgcolor="#FFFFFF">âne, âge</td>
+            <td align="center" bgcolor="#FFFFFF">g</td>
+            <td align="center" bgcolor="#FFFFFF">g</td>
+            <td bgcolor="#FFFFFF">gare, guide, bague, toboggan</td>
           </tr>
           <tr>
-            <td align="center">ɔ</td>
-            <td align="center">O</td>
-            <td>sol, bol</td>
-            <td colspan="2">Consonnes fricatives</td>
-            <td>&nbsp;</td>
+            <td align="center" bgcolor="#FFFFFF">ɔ</td>
+            <td align="center" bgcolor="#FFFFFF">O</td>
+            <td bgcolor="#FFFFFF">sol, bol</td>
+            <td colspan="2" bgcolor="#FFFFFF">Fricative consonants</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
           </tr>
           <tr>
-            <td align="center">o</td>
-            <td align="center">o</td>
-            <td>jaune, mot, hôtel</td>
-            <td align="center">f</td>
-            <td align="center">f</td>
-            <td>foule, affaire, phare</td>
+            <td align="center" bgcolor="#FFFFFF">o</td>
+            <td align="center" bgcolor="#FFFFFF">o</td>
+            <td bgcolor="#FFFFFF">hôte, eau, jaune</td>
+            <td align="center" bgcolor="#FFFFFF">f</td>
+            <td align="center" bgcolor="#FFFFFF">f</td>
+            <td bgcolor="#FFFFFF">foule, affaire, phare</td>
           </tr>
           <tr>
-            <td align="center">ø</td>
-            <td align="center">2</td>
-            <td>deux, œufs</td>
-            <td align="center">s</td>
-            <td align="center">s</td>
-            <td>sol, ce, tasse, science, garçon</td>
+            <td align="center" bgcolor="#FFFFFF">ø</td>
+            <td align="center" bgcolor="#FFFFFF">2</td>
+            <td bgcolor="#FFFFFF">deux, œufs</td>
+            <td align="center" bgcolor="#FFFFFF">s</td>
+            <td align="center" bgcolor="#FFFFFF">s</td>
+            <td bgcolor="#FFFFFF">sol, ce, tasse, science, garçon</td>
           </tr>
           <tr>
-            <td align="center">œ</td>
-            <td align="center">9</td>
-            <td>neuf, œuf, sœur&nbsp;</td>
-            <td align="center">ʃ&nbsp;</td>
-            <td align="center">S</td>
-            <td>chat, vache</td>
+            <td align="center" bgcolor="#FFFFFF">œ</td>
+            <td align="center" bgcolor="#FFFFFF">9</td>
+            <td bgcolor="#FFFFFF">neuf, œuf, sœur&nbsp;</td>
+            <td align="center" bgcolor="#FFFFFF">ʃ&nbsp;</td>
+            <td align="center" bgcolor="#FFFFFF">S</td>
+            <td bgcolor="#FFFFFF">chat, vache</td>
           </tr>
           <tr>
-            <td align="center">ə&nbsp;</td>
-            <td align="center">*</td>
-            <td>table, ceci</td>
-            <td align="center">v</td>
-            <td align="center">v</td>
-            <td>vent, rêve</td>
+            <td align="center" bgcolor="#FFFFFF">ə&nbsp;</td>
+            <td align="center" bgcolor="#FFFFFF">%</td>
+            <td bgcolor="#FFFFFF">table, ceci</td>
+            <td align="center" bgcolor="#FFFFFF">v</td>
+            <td align="center" bgcolor="#FFFFFF">v</td>
+            <td bgcolor="#FFFFFF">vent, rêve</td>
           </tr>
           <tr>
-            <td colspan="2">Voyelles nasales</td>
-            <td>&nbsp;</td>
-            <td align="center">z</td>
-            <td align="center">z</td>
-            <td>zéro, rose</td>
+            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+            <td align="center" bgcolor="#FFFFFF">°</td>
+            <td bgcolor="#FFFFFF">gare, gobelet</td>
+            <td align="center" bgcolor="#FFFFFF">z</td>
+            <td align="center" bgcolor="#FFFFFF">z</td>
+            <td bgcolor="#FFFFFF">zéro, rose</td>
           </tr>
           <tr>
-            <td align="center">ɔ͂</td>
-            <td align="center">§</td>
-            <td>on, ombre</td>
-            <td align="center">ʒ</td>
-            <td align="center">Z</td>
-            <td>jeudi, gel, bourgeon</td>
+            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+            <td align="center" bgcolor="#FFFFFF">#</td>
+            <td bgcolor="#FFFFFF">amie, lycée, gaiement</td>
+            <td align="center" bgcolor="#FFFFFF">ʒ</td>
+            <td align="center" bgcolor="#FFFFFF">Z</td>
+            <td bgcolor="#FFFFFF">jeudi, gel, bourgeon</td>
           </tr>
           <tr>
-            <td align="center">ɑ̃</td>
-            <td align="center">@</td>
-            <td>antique, tente, septembre</td>
-            <td colspan="2">Consonnes nasales</td>
-            <td>&nbsp;</td>
+            <td colspan="2" align="left" bgcolor="#FFFFFF">Nasal Vowels</td>
+            <td align="left" bgcolor="#FFFFFF">&nbsp;</td>
+            <td colspan="2" bgcolor="#FFFFFF">Nasal consonants</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
           </tr>
           <tr>
-            <td align="center">ɛ͂</td>
-            <td align="center">5</td>
-            <td>cinq, bain, chien, plein</td>
-            <td align="center">m</td>
-            <td align="center">m</td>
-            <td>main, femme</td>
+            <td align="center" bgcolor="#FFFFFF">ɔ͂</td>
+            <td align="center" bgcolor="#FFFFFF">§</td>
+            <td bgcolor="#FFFFFF">on, ombre</td>
+            <td align="center" bgcolor="#FFFFFF">m</td>
+            <td align="center" bgcolor="#FFFFFF">m</td>
+            <td bgcolor="#FFFFFF">main, femme</td>
           </tr>
           <tr>
-            <td align="center">œ͂</td>
-            <td align="center">1</td>
-            <td>un, lundi, parfum</td>
-            <td align="center">n</td>
-            <td align="center">n</td>
-            <td>nage, laine, panne</td>
+            <td align="center" bgcolor="#FFFFFF">ɑ̃</td>
+            <td align="center" bgcolor="#FFFFFF">@</td>
+            <td bgcolor="#FFFFFF">antique, tente, septembre</td>
+            <td align="center" bgcolor="#FFFFFF">n</td>
+            <td align="center" bgcolor="#FFFFFF">n</td>
+            <td bgcolor="#FFFFFF">nage, laine, panne</td>
           </tr>
           <tr>
-            <td colspan="2">Semi-voyelles</td>
-            <td>&nbsp;</td>
-            <td align="center">ɲ</td>
-            <td align="center">N</td>
-            <td>ligne, peigne, ognon</td>
+            <td align="center" bgcolor="#FFFFFF">ɛ͂</td>
+            <td align="center" bgcolor="#FFFFFF">5</td>
+            <td bgcolor="#FFFFFF">cinq, bain, chien, plein</td>
+            <td align="center" bgcolor="#FFFFFF">ɲ</td>
+            <td align="center" bgcolor="#FFFFFF">N</td>
+            <td bgcolor="#FFFFFF">ligne, peigne, ognon</td>
           </tr>
           <tr>
-            <td align="center">j</td>
-            <td align="center">j</td>
-            <td>lieu, paye, paille, fille</td>
-            <td align="center">ŋ</td>
-            <td align="center">G</td>
-            <td>parking, ring</td>
+            <td align="center" bgcolor="#FFFFFF">œ͂</td>
+            <td align="center" bgcolor="#FFFFFF">1</td>
+            <td bgcolor="#FFFFFF">un, lundi, parfum</td>
+            <td align="center" bgcolor="#FFFFFF">ŋ</td>
+            <td align="center" bgcolor="#FFFFFF">G</td>
+            <td bgcolor="#FFFFFF">parking, ring</td>
           </tr>
           <tr>
-            <td align="center">w</td>
-            <td align="center">w</td>
-            <td>oie, fois, loin, western</td>
-            <td colspan="2">Autres consonnes</td>
-            <td>&nbsp;</td>
+            <td colspan="2" align="left" bgcolor="#FFFFFF">Semi-Vowels</td>
+            <td align="left" bgcolor="#FFFFFF">&nbsp;</td>
+            <td colspan="2" bgcolor="#FFFFFF">Other consonants</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
           </tr>
           <tr>
-            <td align="center">ɥ</td>
-            <td align="center">8</td>
-            <td>huit, lui, nuit</td>
-            <td align="center">l</td>
-            <td align="center">l</td>
-            <td>lune, aller, pull</td>
+            <td align="center" bgcolor="#FFFFFF">j</td>
+            <td align="center" bgcolor="#FFFFFF">j</td>
+            <td bgcolor="#FFFFFF">lieu, paye, paille, fille</td>
+            <td align="center" bgcolor="#FFFFFF">l</td>
+            <td align="center" bgcolor="#FFFFFF">l</td>
+            <td bgcolor="#FFFFFF">lune, aller, pull</td>
           </tr>
           <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td align="center">ʀ</td>
-            <td align="center">R</td>
-            <td>rue, air, arrière</td>
+            <td align="center" bgcolor="#FFFFFF">w</td>
+            <td align="center" bgcolor="#FFFFFF">w</td>
+            <td bgcolor="#FFFFFF">oie, fois, loin, western</td>
+            <td align="center" bgcolor="#FFFFFF">ʀ</td>
+            <td align="center" bgcolor="#FFFFFF">R</td>
+            <td bgcolor="#FFFFFF">rue, air, arrière</td>
+          </tr>
+          <tr>
+            <td align="center" bgcolor="#FFFFFF">ɥ</td>
+            <td align="center" bgcolor="#FFFFFF">8</td>
+            <td bgcolor="#FFFFFF">huit, lui, nuit</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
           </tr>
         </tbody>
       </table>
       <br>
       <br>
-      <br>
-      <hr> <br>
-      <br>
-      <br>
-      <br>
     </article>
     <br>
+    <br>
+    <hr> <br>
     <br>
   </body>
 </html>
