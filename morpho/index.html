@@ -4,9 +4,11 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Manulex-Morpho</title>
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
+
       href="resolution_small.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
+
       href="resolution_smallsmall.css">
   </head>
   <body>
@@ -20,7 +22,8 @@
             </td>
             <td align="center" width="69%"><span class="style-titre">Manulex
                 Morpho </span></td>
-            <td align="center" width="17%"><img src="images/white.JPG" height="41"
+            <td align="center" width="17%"><img src="images/white.JPG" height="41"
+
                 width="22"></td>
           </tr>
         </tbody>
@@ -34,6 +37,7 @@
             <li><a href="comprendre.html">Comprendre Manulex-Morpho</a></li>
             <li><a href="phonetique.html">Codes phonétiques</a></li>
             <li><a href="morphologie.html">Codes morphologiques</a></li>
+            <li><a href="changes.html">Modifications de la ver.1</a></li>
           </ul>
         </li>
         <li><a href="telechargement.html">Téléchargement</a></li>
@@ -42,15 +46,17 @@
     <main></main>
     <footer></footer>
     <article> <br>
-      <h6> <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons"
+      <h6> <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons"
+
             style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a>
-        Manulex Morpho est soumis aux termes de la <a rel="license" a="" style="text-decoration:none"
+        Manulex Morpho est soumis aux termes de la <a rel="license" a="" style="text-decoration:none"
+
           href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licence
           Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage
           des Conditions Initiales à l'Identique 4.0 International (CC BY-NC-SA
           4.0)</a></h6>
       <titrepage>
-        <h1>Manulex_Morpho v.1.2 - Description générale</h1>
+        <h1>Manulex_Morpho v.2 - Description générale</h1>
       </titrepage>
       <p><i>Manulex_morpho</i> fournit les valeurs des fréquences et des
         consistances Graphème-Phonème (G-Ph) et Phonème-Graphème (Ph-G) pour
@@ -83,24 +89,30 @@
         fréquence et la consistance des associations G-Ph et Ph-G en fonction de
         leur position dans les mots : initiale (premier graphème/phonème),
         finale (dernier graphème/phonème) et intermédiaire (graphèmes/phonèmes
-        au milieu des mots). Les consistances et fréquences moyennes des
-        associations G-Ph et Ph-G du mot sont également fournies sans
-        considération de la position. Les estimations sont réalisées en prenant
-        en compte soit la fréquence lexicale des associations grapho-phonémiques
-        (i. e., compte par-type), soit leurs fréquences textuelles (i. e.,
-        compte par-token). Dans le premier cas, la fréquence de chaque
-        association est déterminée par le nombre de mots de la base lexicale
-        incluant l’association. Dans le second cas, la fréquence de chaque
-        association est déterminée en tenant compte du nombre de fois où les
-        mots incluant l’association sont rencontrés dans les textes écrits
-        (fréquence d’occurrence textuelle). Par exemple, la fréquence lexicale
-        de l’association 'ch'-/k/ est 13 (13 mots contenant cette association)
-        et sa fréquence textuelle de 136, ce qui correspond à la somme des
-        fréquences d’occurrence des 13 mots. Le graphème 'ch' est prononcé
-        différemment dans 565 autres mots avec une fréquence cumulée de 18 289.
-        La consistance lexicale (multipliée par 100) de l’association 'ch'-/k/
-        est donc faible (2.25 ; soit (13 / [565+13]) x 100), tout comme sa
-        consistance textuelle (0.74 ; soit (136 / [18 289+136]) x 100). </p>
+        au milieu des mots). Les estimations sont réalisées en prenant en compte
+        soit la fréquence lexicale des associations grapho-phonémiques (i. e.,
+        compte par-type), soit leurs fréquences textuelles (i. e., compte
+        par-token). Dans le premier cas, la fréquence de chaque association est
+        déterminée par le nombre de mots de la base lexicale incluant
+        l’association. Dans le second cas, la fréquence de chaque association
+        est déterminée en tenant compte du nombre de fois où les mots incluant
+        l’association sont rencontrés dans les textes écrits (fréquence
+        d’occurrence textuelle). Par exemple, le graphème 'ch' apparaît dans 562
+        mots français. Parmi eux, 9 mots possèdent la correspondance G-Ph 'ch' -
+        /k/ comme dans le mot 'chorale' ; la fréquence lexicale de la
+        correspondance est donc de 3. La fréquence totale d'occurrences de ces 9
+        mots dans le corpus de texte est de 184, et c'est donc la fréquence
+        textuelle de la correspondance 'ch' - /k/. La prononciation la plus
+        fréquente du graphème 'ch' est /ʃ/ comme dans le mot 'cheval'. La
+        correspondance 'ch'-/ʃ/ apparaît dans 553 mots et la fréquence totale de
+        ces 553 mots est de 22.388. La consistance de 'ch' - /k/ est donc assez
+        faible en français. Dans la base de données, la consistance est exprimée
+        en pourcentage, obtenu à partir du rapport entre la fréquence propre de
+        la correspondance et la fréquence globale du graphème. Pour 'ch' - /k/,
+        la consistance lexicale est de 1,60% (9/[553 + 9]) x 100 = 1,60%) et la
+        consistance textuelle - obtenue par le même calcul uniquement à partir
+        des données de fréquence textuelle - est de 0,82% (184/[22.388 + 184]) x
+        100 = 0,82%). </p>
       <p>La base de données <i>Manulex_Morpho</i> est associée à la publication
         suivante. Merci de la mentionner pour toute utilisation dans vos travaux
         : Peereman, R., Sprenger-Charolles, L., &amp; Messaoud-Galusi, S.
@@ -128,5 +140,6 @@
     </table>
     <br>
     <br>
+    
   </body>
 </html>
