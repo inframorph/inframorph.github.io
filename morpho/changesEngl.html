@@ -4,11 +4,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Manulex-Morpho v.2 - Changes</title>
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
       href="resolution_small.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
       href="resolution_smallsmall.css">
   </head>
   <body>
@@ -22,8 +20,7 @@
             </td>
             <td align="center" width="69%"><span class="style-titre">Manulex
                 Morpho </span></td>
-            <td align="center" width="17%"><img src="images/white.JPG" height="41"
-
+            <td align="center" width="17%"><img src="images/white.JPG" height="41"
                 width="22"></td>
           </tr>
         </tbody>
@@ -54,140 +51,135 @@
         <h1>Major changes in <i>Manulex Morpho version 2<br>
           </i></h1>
       </titrepage>
-      <p>Tout comme la base Manulex-Infra, la version 2 de Manulex-Morpho
-        apporte des modifications majeures par rapport à la version 1.
-        Globalement, pour 35% des mots, au moins une association G-Ph est
-        modifiée/corrigée dans la version 2. Le pourcentage est de 47% pour les
-        associations Ph-G. Une partie importante des modifications résulte de
-        l’utilisation de segmentations G-Ph et Ph-G distinctes, de la manière
-        dont le codage positionnel des associations est réalisé (association
-        initiale, finale ou interne du mot), et du codage de la consistance Ph-G
-        lorsque les graphèmes silencieux correspondent à des flexions de genre
-        ou nombre, ainsi qu’à des supports de dérivation/flexion de genre (par
-        exemple, le ‘t’ de ‘petit’ car ‘petite’, le ‘d’ de ‘bavard’ car
-        ‘bavarde’, voir onglet ‘codes morphologiques’).<br>
+      <p>Like the Manulex-Infra database, version 2 of Manulex-Morpho brings
+        major changes when compared to version 1. Overall, for 35% of the words,
+        at least one G-Ph association is modified/corrected in version 2. The
+        percentage reaches 47% for Ph-G associations. A significant part of the
+        modifications is due to 1) the use of distinct G-Ph and Ph-G
+        segmentations, 2) how positional coding of the associations is realized
+        (initial, final or internal association of the word), and 3) the coding
+        of Ph-G consistency when silent graphemes correspond to gender/number
+        inflections or derivation/gender inflection supports (e.g., the final
+        't' in 'petit' because ' petite', the final 'd' in 'bavard' because
+        'bavarde', see 'morphology codes' tab).<br>
         <br>
-        • Segmentations G-Ph et Ph-G distinctes. Dans la version 1 de
-        Manulex_Morpho, la description des associations graphème-phonème a
-        initialement été pensée dans le sens de la lecture, du graphème au
-        phonème. Les mêmes associations étaient exploitées pour analyser les
-        associations entre phonème et graphème (sens de l’écriture). Ceci
-        engendre toutefois des problèmes d'estimation des consistances surtout
-        –mais pas exclusivement- lorsque les mots incluent des lettres muettes
-        finales. Par exemple, l’association G-Ph finale du mot ‘nid’ terminant
-        par un ‘d’ muet sera fortement consistante car le ‘d’ final des mots est
-        rarement prononcé. A l’inverse, le ‘d’ final du mot ‘sud’ est prononcé,
-        et la consistance de l’association entre le graphème ‘d’ et le phonème
-        /d/ en finale de mot sera donc faible. La présence de lettres muettes en
-        finales des mots doit être considérée différemment dans l’analyse des
-        associations entre phonèmes et graphèmes (Ph-G ; sens de l’écriture)
-        puisque la présence de graphèmes silencieux n’est pas signalée (par
-        exemple, la séquence phonémique /fulaR/ pour le mot ‘foulard’ dont le
-        ‘d’ final est muet). La solution adoptée dans Manulex_Morpho v.2 pour
-        décrire les associations Ph-G est de rassembler les lettres muettes
-        finales avec le dernier phonème prononcé. Par exemple, dans le sens de
-        l’écriture, le mot ‘renard’ est codé en finale avec /R/-rd, le mot
-        ‘terre’ est codé en finale avec /R/-rre, et le mot ‘gare’ est codé en
-        finale avec /R/-re (la prononciation de ‘renard’ est donc compatible
-        avec les erreurs de production orthographique ‘renarre’, ou ‘renare’).
-        Le principe de codage est similaire lorsque le dernier graphème prononcé
-        correspond à une voyelle ; ‘dans’ est codé en finale avec /ã/-ans, et
-        ‘étang’ avec /ã/-ang. <br>
+        • G-Ph and Ph-G segmentations are different. In version 1 of
+        Manulex_Morpho, the description of grapheme-phoneme associations was
+        initially thought in the "reading direction", from grapheme to phoneme.
+        The same associations were used to analyze the associations between
+        phoneme and grapheme (writing direction). However, this leads to some
+        problems when estimating consistencies, especially -but not exclusively-
+        when the words include final silent letters. For example, the G-Ph final
+        association of the word "nid" ending in a silent "d" is very consistent
+        because the "d" is rarely pronounced at the end of words. Conversely,
+        the final 'd' of the word 'sud' is pronounced, and the consistency of
+        the association between the grapheme 'd' and the phoneme /d/ in the word
+        finals is low. The presence of silent letters at the end of words must
+        be considered differently in the analysis of the associations between
+        phonemes and graphemes since, by definition, silent graphemes have no
+        counterpart in the speech signal. (e.g. the phonemic sequence /fulaR/
+        for the word 'foulard' whose final 'd' is silent). The solution adopted
+        in Manulex_Morpho v.2 to describe the Ph-G associations is to group the
+        silent letters with the grapheme corresponding to the last pronounced
+        phoneme. For example, in the writing direction, the word 'renard' is
+        coded with /R/-rd, the word 'terre' is coded with /R/-rre, and the word
+        'gare' is coded with /R/-re (the pronunciation of 'renard' is thus
+        compatible with the spelling production errors '*renarre', or
+        '*renare'). The coding principle is similar when the last phoneme is a
+        vowel; 'dans' is coded with /ã/-ans, and 'étang' with /ã/-ang. <br>
         <br>
-        • Codage positionnel des associations. 1) Les flexions de genre, suivies
-        ou non d'une flexion de nombre, sont codées comme graphèmes finaux. 2)
-        Similairement, les flexions verbales sont codées comme graphèmes finaux,
-        qu'elles soient ou non suivies d'une flexion de genre ou nombre (par
-        exemple, les -ées des participes passés au féminin pluriel). Toutefois,
-        les flexions en –ant, -it, -is, et –t des participes présents et des
-        participes passés sont codées comme internes lorsque suivies d’une
-        flexion de genre car cette dernière modifie la prononciation de la
-        consonne finale (t, s) de la flexion verbale. Cette exception est
-        nécessaire afin de préserver la consistance de prononciations des
-        flexions verbales (e. g., -ant dans ‘glissant’ et dans ‘glissante’). 3)
-        Les autres graphèmes (consonantiques et vocaliques) non suivis d'une
-        voyelle (flexion de genre 'e' ou non) mais suivis d'une flexion de
-        nombre sont codés comme finaux (par exemple 'bavards' et 'buvards' avec
-        "d" comme graphème final; ''bouquets' avec 'et' comme graphème final,
-        "caméras" avec "a" comme graphème final ). Ceci assure le même
-        traitement de ces consonnes/voyelles selon que le mot soit au singulier
-        ou au pluriel. <br>
+        • Positional coding of associations. 1) Gender inflections, whether or
+        not followed by a number inflection, are coded as final graphemes. 2)
+        Similarly, verbal inflections are coded as final graphemes, whether or
+        not they are followed by a gender or number inflection (e.g. the final
+        -ées of plural feminine past participles). However, the -ant, -it, -is,
+        and -t inflections of present and past participles are coded as internal
+        when followed by a gender inflection because the latter modifies the
+        pronunciation of the final consonant (-t or –s of the verbal
+        inflection). This exception is necessary to preserve the consistency of
+        pronunciations of verbal inflections (e.g., -ant in 'glissant' and in
+        'glissante'). 3) Other graphemes (consonants and vowels) not followed by
+        a vowel (gender inflection 'e' or not) but followed by a number
+        inflection are coded as final (e.g. The final ‘d’ in ‘bavard’ and in
+        ‘buvard’ is also coded as final when these words are in the plural form
+        (‘bavards’, ‘buvards’)). This ensures the same treatment of these
+        consonants/vowels depending on whether the word is singular or plural. <br>
         <br>
-        • Consistance Ph-G lorsque les graphèmes silencieux correspondent à des
-        flexions de genre/nombre ou à des supports de dérivation/flexion. Les
-        flexions de genre/nombre sont indicées avec le code ‘3’ et les supports
-        de dérivation/flexion sont indicés avec le code ‘6’ (voir onglet ‘codes
-        morphologiques’). La consistance des associations Ph-G pour les flexions
-        de genre/nombre est établie à 100% puisque la probabilité que le mot
-        termine par un ‘e’ est de 100% si le mot est fléchi en genre, et la
-        probabilité que le mot termine en ‘s’ ou ‘x’ est de 100% si le mot est
-        fléchi en nombre. La consistance des supports de dérivation/flexion qui
-        correspondent à des consonnes muettes (e. g., ‘t’ dans ‘aliment’, ‘d’
-        dans ‘grand’) est également fixée à 100% puisque le graphème silencieux
-        peut être prédit à partir de la connaissance des mots dérivés
-        (‘alimentation’, ‘alimentaire’, ‘grandeur’) ou des mots fléchis
-        (‘grande’). La prédiction des graphèmes silencieux est généralement
-        simple pour les finales en –b (plomb), -d (grand), -g (long, sang), -l
-        (cristal, gentil), -p (camp), -t (absent) même si la prononciation du
-        graphème peut différer entre les formes dérivées/fléchies (par exemple
-        ‘g’ prononcé /g/ dans ‘longueur’ et /ʒ/ dans ‘longer’). Les graphèmes en
-        –f sont, quant à eux, transformés en /v/ lors des dérivations/flexions
-        (sportif – sportive, neuf – neuve), mais la présence d’un –v en finale
-        de mots est illégale en français. Enfin, les finales en –s (gros, gris,
-        frais), en –x (choix, doux), et –z (riz) sont associées aux phonèmes
-        /s/, /z/, /S/ et les consistances Ph-G sont donc estimées en fonction de
-        la probabilité de chacun des graphèmes silencieux à partir du phonème
-        (e. g. le /z/ de ‘choisir’ est compatible avec ‘x’ dans le mot ‘choix’,
-        mais un ‘s’ (*chois) ou un ‘z’ (*choiz) sont également possibles. <br>
+        • Ph-G consistency when silent graphemes correspond to gender/number
+        inflections or derivation/flexion supports. Gender/number inflections
+        are tagged with the number '3' and derivation/flexion supports are
+        tagged with the number '6' (see the 'morphology codes' tab). The
+        consistency of Ph-G associations for gender/number inflections is set to
+        100% since the probability that the word ends with 'e' is 100% if the
+        word is gender inflected, and the probability that the word ends with
+        's' or 'x' is 100% if the word is number inflected. The consistency of
+        derivation/flexion supports corresponding to silent consonants (e.g.,
+        't' in 'aliment', 'd' in 'grand') is also set to 100% since the silent
+        grapheme can be predicted from the derived words ('alimentation',
+        'alimentaire', ‘grandeur’) or the inflected words ('grande'). Predicting
+        the silent graphemes is generally straightforward for endings in -b
+        (plomb), -d (grand), -g (long, sang), -l (cristal, gentil), -p (camp),
+        -t (absent) even though the pronunciation of the grapheme may differ
+        between derived/inflected forms (e.g., 'g' pronounced /g/ in 'longueur'
+        and /ʒ/ in 'longer'). Graphemes in -f are transformed into /v/ during
+        derivations/flexions (sportif - sportive, neuf - neuve), but the
+        presence of a -v in word endings is graphotactically illegal in French.
+        Finally, endings in –c (blanc, banc), -s (gros, gris, frais), -x (choix,
+        doux), and -z (riz) are associated with more than one phoneme in
+        derived/inflected forms (/s/, /z/, /S/, /k/) and Ph-G consistency is
+        therefore estimated according to the probability of each of the possible
+        silent graphemes. For example, the /z/ in 'choisir' (/SwaziR/) is
+        compatible with 'x' in the word 'choix', but 's' (*chois) or 'z'
+        (*choiz) are also possible because /z/ can occur in derived/inflected
+        forms of words ending in –z or –s (riz-rizière, gris-grise). <br>
         <br>
-        • Ajout, pour chaque mot, de l’association G-Ph ou Ph-G la moins
-        consistante, et de l’association la moins fréquente. A noter que
-        l’association la moins consistante n’est pas nécessairement la moins
-        fréquente, et vice-versa. <br>
+        • For each word, the least consistent G-Ph or Ph-G association, and of
+        the least frequent association are mentioned to facilitate word
+        selection. Note that the least consistent association is not necessarily
+        the least frequent association, and vice-versa. <br>
         <br>
-        • Modifications et corrections de plusieurs codes phonologiques et
-        segmentations en graphèmes et phonèmes<br>
+        • Modifications/corrections of several phonological codes, graphemic and
+        phonological segmentations<br>
         <br>
-        • Suppression de la distinction entre les deux ‘a’ (/a/ de ‘patte’ et
-        /ɑ/ de ‘pâte’) dans le calcul des consistances<br>
+        • Removal of the distinction between the two 'a's (/a/ of 'patte' and
+        /ɑ/ of 'pâte') when computing G-Ph consistency<br>
         <br>
-        • Les mots incluant le grapheme ‘ai’ (‘maison’, ‘lainage’) acceptent
-        fréquemment la prononciation /E/ ou /e/. La consistance de l’association
-        G-Ph ne tient plus compte de cette distinction. <br>
+        • Words including the grapheme 'ai' (e. g., 'maison', 'lainage') can
+        frequently be pronounced with the phoneme /E/ or the phoneme /e/. The
+        consistency of the G-Ph association no longer takes this distinction
+        into account. <br>
         <br>
-        • Introduction des différences entre les ‘e’ obligatoirement prononcés,
-        obligatoirement muets, ou avec schwa optionnel (voir onglet ‘codes
-        phonétiques’) <br>
+        • Introduction of the distinctions between the 'e' grapheme when
+        obligatorily pronounced (compulsory schwa), always silent, or
+        corresponding to an optional schwa (see 'phonetic codes' tab) <br>
         <br>
-        • La consistance G-Ph pour le graphème ‘e’ dont le schwa est optionnel
-        (‘reste’, ‘perle’) est fixée à 100 puisque le ‘e’ peut ou non être
-        prononcé. <br>
+        • The G-Ph consistency for 'e' with optional schwa ('reste', 'perle') is
+        set to 100 since the 'e' may or may not be pronounced. <br>
         <br>
-        • Dans le cas des associations Ph-G seulement, les quelques rares
-        consonnes muettes en position interne (exemple : ‘m’ dans ‘automne’, ‘p’
-        dans ‘baptême’) ne sont pas présentes dans le signal de parole, et leur
-        consistance Ph-G est donc de 0%<br>
+        • In the case of Ph-G associations, the silent letters in internal
+        position (e.g. 'm' in 'autumn', 'p' in 'baptism') are not predictable
+        from the speech signal, and the Ph-G consistency is therefore set to
+        zero<br>
         <br>
-        • Cas des ‘e’ suivit de deux consonnes identiques. Le codage, dans le
-        sens de la lecture a été uniformisé en renseignant le ‘e’ suivit de deux
-        consonnes identiques comme .e[CC]. (avec CC pour signaler 2 consonnes
-        identiques). Le mot ‘femme’ est donc codé comme ‘f.e[CC].mm.e’. Sa
-        consistance basse résulte du fait que ‘e’ suivit d’un doublet est
-        généralement prononcé /e/ ou /E/. Toutefois, ceci n’est réalisée que
-        lorsque le ‘e’ n’est pas inclus dans un groupe codé morphologiquement
-        (indice ‘6’ ; support de dérivation/flexion) tel que dans ‘ancienne’
-        dont le ‘enn’ est codé ‘6enn’. Ce codage des ‘e[CC]’ n’est réalisé que
-        pour les associations G-Ph mais pas dans les associations Ph-G puisque,
-        en Français, rien ne signale la présence du doublet dans le signal de
-        parole. <br>
+        • Case of 'e' followed by two identical consonants. The coding, in the
+        reading direction (G-Ph), is standardized by coding the 'e' followed by
+        two identical consonants as ‘e[CC]’ (with 'CC' meaning 2 identical
+        consonants). For exemple, the word 'femme' is coded as 'f.e[CC].mm.e'.
+        Its low consistency value results from the fact that 'e' followed by a
+        doublet is usually pronounced /e/ or /E/. This particular coding is only
+        realized for G-Ph associations, not for Ph-G associations since, in
+        French, the presence of a doublet is not indicated in the speech signal.
+        The coding of G-Ph associations with 'e[CC]' applies to all words in
+        order to highlight inconsistencies (thus also to words such as 'ennui'
+        coded 'e[CC]-@.nn-n.ui-8i') <br>
         <br>
-        • Cas des mots incluant –eill ou –eil non précédés de ‘u’ ( ‘abeille’,
-        ‘bienveillant’, ‘sommeil’). Le codage a été modifié en regroupant en
-        ‘eil’ ou ‘eill’. Dans ces groupes la séquence ‘ill’ est toujours
-        associée à la semi-voyelle /j/, jamais à la consonne /l/. <br>
+        • Case of words including -eill or -eil not preceded by 'u' (e. g.,
+        'abeille', 'bienveillant', 'sommeil'). The coding has been modified in
+        'eil' or 'eill'. In these groups the sequence 'ill' is always associated
+        with the semi-vowel /j/, never with the consonant /l/<br>
         <br>
-        • Afin d’éliminer quelques rares associations G-Ph ou Ph-G, les noms
-        propres sont exclus des analyses. <br>
+        • In order to eliminate some rare G-Ph or Ph-G associations, proper
+        names are excluded from the analyses <br>
         <br>
       </p>
       <p></p>
