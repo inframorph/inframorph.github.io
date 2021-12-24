@@ -6,11 +6,9 @@
     <meta name="description" content="Caractéristiques grapho-phonologiques des mots chez le jeune lecteur">
     <meta name="keywords" content="Manulex-infra,Manulex_infra,Manulex,Manulex-infra v.2,apprentissage de la lecture,graphèmes-phonèmes">
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
       href="resolution_small.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
       href="resolution_smallsmall.css">
   </head>
   <body>
@@ -24,8 +22,7 @@
             </td>
             <td align="center" width="69%"><span class="style-titre">Manulex
                 Infra </span></td>
-            <td align="center" width="17%"><img src="images/white.JPG" height="41"
-
+            <td align="center" width="17%"><img src="images/white.JPG" height="41"
                 width="22"></td>
           </tr>
         </tbody>
@@ -61,10 +58,13 @@
         notion de consistance réfère, dans le cas des associations Ph-G à la
         probabilité de produire un graphème particulier à partir du phonème
         prononcé. Lorsque le phonème est dit ‘silencieux’ (lettre muette), le
-        signal de parole ne peut conduire à la production d’une lettre muette et
-        les descriptions des associations doivent donc être distinguées selon
-        que nous envisageons la lecture (G-Ph) et l’écriture (Ph-G). Ceci est
-        réalisé dans la version 2 (voir onglet ‘Comprendre Manulex_Infra).<br>
+        signal de parole ne peut conduire à la production d’une lettre muette (à
+        moins de connaitre l'orthographe exacte du mot, ou d'avoir la
+        connaissance de la présence d'une lettre muette sans en connaitre son
+        identité). Les descriptions des associations doivent donc être
+        distinguées selon que nous envisageons la lecture (G-Ph) et l’écriture
+        (Ph-G). Ceci est réalisé dans la version 2 (voir onglet ‘Comprendre
+        Manulex_Infra).<br>
         <br>
         • Ajout des analyses portant sur la consistance et fréquence des
         associations grapho-phonologiques portant sur l’unité de rime finale des
@@ -103,23 +103,28 @@
         dans ‘baptême’) ne sont pas présentes dans le signal de parole, et leur
         consistance Ph-G est donc de 0%<br>
         <br>
-        • Cas des ‘e’ suivit de deux consonnes identiques. Le recodage fait
-        suite à l’observation que des mots comme ‘femme’ ou ‘solennel’
-        apparaissent comme réguliers dans la version 1 de <i>Manulex_Infra</i>.
-        Ceci tient au codage particulier des ‘emm’ et ‘enn’ comme groupes
-        graphémiques alors que les ‘e’ suivit d’autres doublets étaient codés
-        séparément de consonnes qui suivent (par exemple ‘e.rr’ dans ‘terre’
-        mais ‘emm’ dans ‘femme’). Le codage, dans le sens de la lecture a été
-        uniformisé en renseignant le ‘e’ suivit de deux consonnes identiques
-        comme .e[CC]. (avec CC pour signaler 2 consonnes identiques). Le mot
-        ‘femme’ est donc maintenant codé comme ‘f.e[CC].mm.e’. Sa consistance
-        basse résulte du fait que ‘e’ suivit d’un doublet est généralement
-        prononcé /e/ ou /E/. Ce codage des ‘e[CC]’ n’est réalisé que pour les
-        associations G-Ph mais pas dans les associations Ph-G puisque, en
-        Français,&nbsp; rien ne signale la présence du doublet dans le signal de
-        parole. Ce codage des associations G-Ph avec ‘e[CC]’ s’applique à tous
-        les mots afin de faire ressortir les inconsistances, donc aussi à des
-        mots tel que ‘ennui’ codé ‘e[CC]-@.nn-n.ui-8i’. <br>
+        • Cas des ‘e’ suivit de deux consonnes identiques. Dans la version 1 de
+        <i>Manulex_infra</i>, les suites orthographiques ‘emm’ et ‘enn’ étaient
+        codées comme groupes graphémiques alors que les ‘e’ suivit d’autres
+        doublets (‘err’, ‘ett’) étaient codés séparément de consonnes qui
+        suivent (par exemple ‘e.rr’ dans ‘terre’). Ce codage particulier des
+        ‘emm’ et ‘enn’ répondait au principe de segmentation visant à mettre en
+        évidence les inconsistances dans la prononciation des mots, ces deux
+        suites orthographiques étant prononcées différemment dans ‘antenne’ et
+        ‘flemme’ que dans ‘solennel’ et ‘patiemment’. Cependant, compte tenu du
+        nombre élevé d’adverbes en ‘emment’ partageant l’association ‘emm’-/ɑ̃/
+        (patiemment, évidemment, récemment), un mot tel que ‘femme’ apparaissait
+        comme consistant. Le codage, dans le sens de la lecture a été uniformisé
+        en renseignant le ‘e’ suivit de deux consonnes identiques comme .e[CC].
+        (avec CC pour signaler 2 consonnes identiques). Le mot ‘femme’ est donc
+        maintenant codé comme ‘f.e[CC].mm.e’. Sa consistance basse résulte du
+        fait que ‘e’ suivit d’un doublet est généralement prononcé /e/ ou /E/.
+        Ce codage des ‘e[CC]’ n’est réalisé que pour les associations G-Ph mais
+        pas dans les associations Ph-G puisque, en Français,&nbsp; rien ne
+        signale la présence du doublet dans le signal de parole. Ce codage des
+        associations G-Ph avec ‘e[CC]’ s’applique à tous les mots afin de faire
+        ressortir les inconsistances, donc aussi à des mots tel que ‘ennui’ codé
+        ‘e[CC]-@.nn-n.u-8.i-i’. <br>
         <br>
         • Cas des mots incluant –eill ou –eil non précédés de ‘u’ ( ‘abeille’,
         ‘bienveillant’, ‘sommeil’). Le codage a été modifié en regroupant en
