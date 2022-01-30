@@ -52,9 +52,7 @@
           </i></h1>
       </titrepage>
       <p>Like the Manulex-Infra database, version 2 of Manulex-Morpho brings
-        major changes when compared to version 1. Overall, for 35% of the words,
-        at least one G-Ph association is modified/corrected in version 2. The
-        percentage reaches 47% for Ph-G associations. A significant part of the
+        major changes when compared to version 1. A significant part of the
         modifications is due to 1) the use of distinct G-Ph and Ph-G
         segmentations, 2) how positional coding of the associations is realized
         (initial, final or internal association of the word), and 3) the coding
@@ -77,16 +75,16 @@
         presence of silent letters at the end of words must be considered
         differently in the analysis of the associations between phonemes and
         graphemes since, by definition, silent graphemes have no counterpart in
-        the speech signal. (e.g. the phonemic sequence /fulaR/ for the word
-        'foulard' whose final 'd' is silent). The solution adopted in
-        Manulex_Morpho v.2 to describe the Ph-G associations is to group the
-        silent letters with the grapheme corresponding to the last pronounced
-        phoneme. For example, in the writing direction, the word 'renard' is
-        coded with /R/-rd, the word 'terre' is coded with /R/-rre, and the word
-        'gare' is coded with /R/-re (the pronunciation of 'renard' is thus
-        compatible with the spelling errors '*renarre', or '*renare'). The
-        coding principle is similar when the last phoneme is a vowel; 'dans' is
-        coded with /ã/-ans, and 'étang' with /ã/-ang. <br>
+        the speech signal. (e.g., /fulaR/ for the word 'foulard' whose final 'd'
+        is silent). The solution adopted in Manulex_Morpho v.2 to describe the
+        Ph-G associations is to group the silent letters with the grapheme
+        corresponding to the last pronounced grapheme (ending phoneme). For
+        example, in the writing direction, the word 'renard' is coded with
+        /R/-rd, the word 'terre' is coded with /R/-rre, and the word 'gare' is
+        coded with /R/-re (the pronunciation of 'renard' is thus compatible with
+        the spelling errors '*renarre', or '*renare'). The coding principle is
+        similar when the last phoneme is a vowel; 'dans' is coded with /ã/-ans,
+        and 'étang' with /ã/-ang. <br>
         <br>
         • Positional coding of associations. 1) Gender inflections, whether or
         not followed by a number inflection, are coded as final graphemes. 2)
@@ -97,7 +95,7 @@
         when followed by a gender inflection because the latter modifies the
         pronunciation of the final consonant (-t or –s of the verbal
         inflection). This exception is necessary to preserve the consistency of
-        pronunciations of verbal inflections (e.g., -ant in 'glissant' and in
+        pronunciations for verbal inflections (e.g., -ant in 'glissant' and in
         'glissante'). 3) Other graphemes (consonants and vowels) not followed by
         a vowel (gender inflection 'e' or not) but followed by a number
         inflection are coded as final (e.g. The final ‘d’ in ‘bavard’ and in
@@ -124,14 +122,14 @@
         and /ʒ/ in 'longer'). Graphemes in -f are transformed into /v/ during
         derivations/flexions (sportif - sportive, neuf - neuve), but the
         presence of a -v in word endings is graphotactically illegal in French.
-        Finally, endings in –c (blanc, banc), -s (gros, gris, frais), -x (choix,
-        doux), and -z (riz) are associated with more than one phoneme in
-        derived/inflected forms (/s/, /z/, /S/, /k/) and Ph-G consistency is
-        therefore estimated according to the probability of each of the possible
-        silent graphemes. For example, the /z/ in 'choisir' (/SwaziR/) is
-        compatible with 'x' in the word 'choix', but 's' (*chois) or 'z'
-        (*choiz) are also possible because /z/ can occur in derived/inflected
-        forms of words ending in –z or –s (riz-rizière, gris-grise). <br>
+        Finally, the finals in -s (gros, gris, frais), in -x (choix, doux), and
+        -z (riz) are associated with the phonemes /s/, /z/, /S/ and the Ph-G
+        consistencies are therefore estimated as a function of the probability
+        of the silent grapheme from the phoneme. For example, the /z/ in
+        'choisir' (/SwaziR/) is compatible with 'x' in the word 'choix', but 's'
+        (*chois) or 'z' (*choiz) are also possible because /z/ can occur in
+        derived/inflected forms of words ending in –z or –s (riz-rizière,
+        gris-grise). <br>
         <br>
         • For each word, the least consistent G-Ph or Ph-G association, and of
         the least frequent association are mentioned to facilitate word
@@ -168,10 +166,10 @@
         Its low consistency value results from the fact that 'e' followed by a
         doublet is usually pronounced /e/ or /E/. This particular coding is only
         realized for G-Ph associations, not for Ph-G associations since, in
-        French, the presence of a doublet is not indicated in the speech signal.
-        The coding of G-Ph associations with 'e[CC]' applies to all words in
-        order to highlight inconsistencies (thus also to words such as 'ennui'
-        coded 'e[CC]-@.nn-n.ui-8i') <br>
+        French, the presence of a doublet is not cued in the speech signal. The
+        coding of G-Ph associations with 'e[CC]' applies to all words in order
+        to highlight inconsistencies (thus also to words such as 'ennui' coded
+        'e[CC]-@.nn-n.ui-8i') <br>
         <br>
         • Case of words including -eill or -eil not preceded by 'u' (e. g.,
         'abeille', 'bienveillant', 'sommeil'). The coding has been modified in
