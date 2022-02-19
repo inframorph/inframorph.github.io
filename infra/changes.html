@@ -50,23 +50,20 @@
       </titrepage>
       <p>• Segmentations G-Ph et Ph-G distinctes. Dans la version 1 de <i>Manulex_Infra</i>,
         la description des associations graphème-phonème a initialement été
-        pensée dans le sens de la lecture, du graphème au phonème. Les mêmes
-        associations étaient exploitées pour analyser les associations entre
-        phonème et graphème (sens de l’écriture). Ceci engendre toutefois des
-        problèmes d'estimation des consistances surtout –mais pas exclusivement-
-        lorsque les mots incluent des lettres muettes finales. En effet, la
-        notion de consistance réfère, dans le cas des associations Ph-G à la
-        probabilité de produire un graphème particulier à partir du phonème
-        prononcé. Lorsque le phonème est dit ‘silencieux’ (lettre muette), le
-        signal de parole ne peut conduire à la production d’une lettre muette (à
-        moins de connaitre l'orthographe exacte du mot, ou d'avoir la
-        connaissance de la présence d'une lettre muette sans en connaitre son
-        identité). Les descriptions des associations doivent donc être
-        distinguées selon que nous envisageons la lecture (G-Ph) et l’écriture
-        (Ph-G). Ceci est réalisé dans la version 2 (voir onglet ‘Comprendre
-        Manulex_Infra).<br>
+        pensée dans le sens de la lecture, de G à Ph. Les mêmes associations
+        étaient exploitées pour analyser les associations entre phonème et
+        graphème (sens de l’écriture). Toutefois, la notion de consistance
+        réfère, dans le cas des associations Ph-G à la probabilité de produire
+        un graphème particulier à partir du phonème prononcé. Lorsque le
+        graphème n'est pas prononcé (graphème "muet"), sa présence et son
+        identité ne peuvent être prédites (à moins de connaitre l'orthographe
+        exacte du mot, ou d'avoir la connaissance de la présence d'une lettre
+        muette sans en connaitre nécessairement son identité). Les descriptions
+        des associations doivent donc être distinguées selon que nous
+        envisageons la lecture (G-Ph) et l’écriture (Ph-G). Ceci est réalisé
+        dans la version 2 (voir onglet ‘Comprendre Manulex_Infra).<br>
         <br>
-        • Ajout des analyses portant sur la consistance et fréquence des
+        • Ajout des analyses portant sur la consistance et la fréquence des
         associations grapho-phonologiques portant sur l’unité de rime finale des
         mots<br>
         <br>
@@ -74,57 +71,55 @@
         lexèmes (lemmes), excluant donc les formes fléchies <br>
         <br>
         • Ajout, pour chaque mot, de l’association G-Ph ou Ph-G la moins
-        consistante, et de l’association la moins fréquente. A noter que
-        l’association la moins consistante n’est pas nécessairement la moins
-        fréquente, et vice-versa. <br>
+        consistante, et la moins fréquente. A noter que l’association la moins
+        consistante n’est pas nécessairement la moins fréquente, et vice-versa.
+        <br>
         <br>
         • Modifications et corrections de plusieurs codes phonologiques et
         segmentations en graphèmes et phonèmes<br>
         <br>
-        • Suppression de la distinction entre les deux ‘a’ (/a/ de ‘patte’ et
+        • Suppression de la distinction entre les deux "a" (/a/ de ‘patte’ et
         /ɑ/ de ‘pâte’) dans le calcul des consistances<br>
         <br>
-        • Les mots incluant le grapheme ‘ai’ (‘maison’, ‘lainage’) acceptent
+        • Les mots incluant le graphème ‘ai’ (‘maison’, ‘lainage’) acceptent
         fréquemment la pronunciation /E/ ou /e/. La consistance de l’association
         G-Ph ne tient plus compte de cette distinction. <br>
         <br>
-        • Introduction des différences entre les ‘e’ obligatoirement prononcés,
-        obligatoirement muets, ou avec schwa optionnel (voir onglet ‘codes
-        phonétiques’) <br>
+        • Introduction des différences entre le "e" obligatoirement prononcé,
+        obligatoirement muet, ou optionnel (voir onglet ‘codes phonétiques’) <br>
         <br>
         • Modifications de la segmentation syllabique des mots en accord avec le
-        codage des ‘e’ muets ou non muets. <br>
+        codage des "e" muets ou non muets. <br>
         <br>
-        • La consistance G-Ph pour le graphème ‘e’ dont le schwa est optionnel
-        (‘reste’, ‘perle’) est fixée à 100 puisque le ‘e’ peut ou non être
-        prononcé. <br>
+        • La consistance G-Ph pour le graphème "e" schwa optionnel (‘gare’,
+        ‘parle’) est fixée à 100 puisque le ‘e’ peut ou non être prononcé. <br>
         <br>
         • Dans le cas des associations Ph-G seulement, les quelques rares
         consonnes muettes en position interne (exemple : ‘m’ dans ‘automne’, ‘p’
         dans ‘baptême’) ne sont pas présentes dans le signal de parole, et leur
         consistance Ph-G est donc de 0%<br>
         <br>
-        • Cas des ‘e’ suivit de deux consonnes identiques. Dans la version 1 de
-        <i>Manulex_infra</i>, les suites orthographiques ‘emm’ et ‘enn’ étaient
-        codées comme groupes graphémiques alors que les ‘e’ suivit d’autres
-        doublets (‘err’, ‘ett’) étaient codés séparément de consonnes qui
-        suivent (par exemple ‘e.rr’ dans ‘terre’). Ce codage particulier des
-        ‘emm’ et ‘enn’ répondait au principe de segmentation visant à mettre en
-        évidence les inconsistances dans la prononciation des mots, ces deux
-        suites orthographiques étant prononcées différemment dans ‘antenne’ et
-        ‘flemme’ que dans ‘solennel’ et ‘patiemment’. Toutefois, compte tenu du
-        nombre élevé d’adverbes en ‘emment’ partageant l’association ‘emm’-/am/
-        (patiemment, évidemment, récemment), un mot tel que ‘femme’ apparaissait
-        comme consistant. Le codage, dans le sens de la lecture a été uniformisé
-        en renseignant le ‘e’ suivit de deux consonnes identiques comme .e[CC].
-        (avec CC pour signaler 2 consonnes identiques). Le mot ‘femme’ est donc
-        maintenant codé comme ‘f.e[CC].mm.e’. Sa consistance basse résulte du
-        fait que ‘e’ suivit d’un doublet est généralement prononcé /e/ ou /E/.
-        Ce codage des ‘e[CC]’ n’est réalisé que pour les associations G-Ph mais
-        pas dans les associations Ph-G puisque, en Français,&nbsp; rien ne
-        signale la présence du doublet dans le signal de parole. Ce codage des
-        associations G-Ph avec ‘e[CC]’ s’applique à tous les mots afin de faire
-        ressortir les inconsistances, donc aussi à des mots tel que ‘ennui’ codé
+        • Cas du ‘e’ suivi de deux consonnes identiques. Dans la version 1 de <i>Manulex_infra</i>,
+        les suites orthographiques ‘emm’ et ‘enn’ étaient codées comme groupes
+        graphémiques alors que, pour les autres doublets (rr, tt), le "e"&nbsp;
+        étaient codés séparément de consonnes qui suivent (par exemple ‘e.rr’
+        dans ‘terre’). Ce codage particulier des ‘emm’ et ‘enn’ répondait au
+        principe de segmentation visant à mettre en évidence les inconsistances
+        dans la prononciation des mots, ces deux suites orthographiques étant
+        prononcées différemment dans ‘antenne’ et ‘flemme’ que dans ‘solennel’
+        et ‘patiemment’. Toutefois, compte tenu du nombre élevé d’adverbes en
+        ‘emment’ partageant l’association ‘emm’-/am/ (patiemment, évidemment,
+        récemment), un mot tel que ‘femme’ apparaissait comme consistant. Le
+        codage, dans le sens de la lecture a été uniformisé en renseignant le
+        ‘e’ suivit de deux consonnes identiques comme .e[CC]. (avec CC pour
+        signaler 2 consonnes identiques). Le mot ‘femme’ est donc maintenant
+        codé comme ‘f.e[CC].mm.e’. Sa consistance basse résulte du fait que ‘e’
+        suivit d’un doublet est généralement prononcé /e/ ou /E/. Ce codage des
+        ‘e[CC]’ n’est réalisé que pour les associations G-Ph mais pas dans les
+        associations Ph-G puisque, en Français,&nbsp; rien ne signale la
+        présence du doublet dans le signal de parole. Ce codage des associations
+        G-Ph avec ‘e[CC]’ s’applique à tous les mots afin de faire ressortir les
+        inconsistances, donc aussi à des mots tel que ‘ennui’ codé
         ‘e[CC]-@.nn-n.u-8.i-i’. <br>
         <br>
         • Cas des mots incluant –eill ou –eil non précédés de ‘u’ ( ‘abeille’,
