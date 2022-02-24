@@ -52,86 +52,86 @@
         associations were then used to analyze the associations between phonemes
         and graphemes (writing direction). However, this procedure causes
         problems especially -though not exclusively- when the words include
-        silent letters. It should be remembered that the notion of consistency
-        refers, in the case of Ph-G associations, to the probability of
-        producing a particular grapheme from a given phoneme. When the phoneme
-        is said to be 'silent' (silent letter), the speech signal cannot lead to
-        the production of a silent letter and the descriptions of the
-        associations must therefore be distinguished according to whether we are
-        considering reading (G-Ph) or spelling (Ph-G). This is done in version 2
-        (see tab 'Understanding Manulex_Infra).<br>
+        silent letters. Indeed, Ph-G consistency is defined as the probability
+        of writing a particular grapheme from the pronounced phoneme. In case of
+        a silent grapheme, no audible phoneme is produced and it is difficult to
+        predict for sure what letter should be written (unless one knows the
+        exact spelling of the word). Therefore associations must be described
+        differently when considering reading (G-Ph) and writing (Ph-G). This
+        information is now available in version 2 (see tab 'Understanding
+        Manulex_Infra)..<br>
         <br>
-        • Version 2 includes additional analyses on the consistency and the
-        frequency of grapho-phonological associations on the final rime unit of
-        words<br>
+        • Analyses of the consistency and frequency of grapho-phonological
+        associations on the final rhyme unit of words.<br>
         <br>
-        • Additional analyses restricted to lexical forms corresponding to
-        lexemes (lemmas), thus excluding inflected forms (see tab 'Understanding
-        Manulex_Infra')<br>
+        • Analyses of lexemes (lemmas)<br>
         <br>
-        • For each word, the least consistent G-Ph or Ph-G association, and of
-        the least frequent association are mentioned. Note that the least
-        consistent association is not necessarily the least frequent
-        association, and vice-versa. <br>
+        • For each word the least consistent and the least G-Ph or Ph-G
+        association. Note that the least consistent association is not always
+        the least frequent, and vice-versa. <br>
         <br>
-        • Modifications/corrections of several phonological codes, graphemic and
-        phonological segmentations<br>
+        • Phonological codes and segmentations into graphemes and phonemes were
+        modified<br>
         <br>
-        • Removal of the distinction between the two 'a's (/a/ of 'patte' and
-        /ɑ/ of 'pâte') when computing G-Ph consistency<br>
+        • The distinction between the two 'a' (/a/ of “patte” and /ɑ/ of “pâte”)
+        were removed fro consistency calculation. They are considered as the
+        same phoneme.<br>
         <br>
-        • Words including the grapheme 'ai' (e. g., 'maison', 'lainage') can
-        frequently be pronounced with the phoneme /E/ or the phoneme /e/. The
-        consistency of the G-Ph association no longer takes this distinction
-        into account. <br>
+        • Words including the grapheme 'ai' ('maison', 'laine') can be
+        transcribed as /E/ or /e/. Therefore consistency calculation consider
+        the G-Ph association as the same. <br>
         <br>
-        • Introduction of the distinctions between the 'e' grapheme when
-        obligatorily pronounced (compulsory schwa), always silent, or
-        corresponding to an optional schwa (see 'phonetic codes' tab) <br>
+        • The difference between 'e' that are obligatorily pronounced,
+        obligatorily silent, or with optional schwa (see 'phonetic codes' tab)
+        is now included in analyses. <br>
         <br>
-        • Modifications of the syllabic segmentation of words in accordance with
-        the coding of the ‘e’ as silent/optional or corresponding to a
-        compulsory schwa <br>
+        • The syllabic segmentation of words in accordance with the coding of
+        silent or non silent 'e' is included in analyses.<br>
         <br>
-        • The G-Ph consistency for 'e' with optional schwa ('reste', 'perle') is
-        set to 100 since the 'e' may or may not be pronounced. <br>
+        • The G-Ph consistency for the grapheme 'e' whose schwa is optional
+        ('gare', 'parle') is set to 100 since the 'e' may or may not be
+        pronounced. <br>
         <br>
-        • In the case of Ph-G associations, the silent letters in internal
-        position (e.g. 'm' in 'autumn', 'p' in 'baptism') are not predictable
-        from the speech signal, and the Ph-G consistency is therefore set to
-        zero<br>
+        • In the case of Ph-G associations only, the few rare silent consonants
+        in internal position (e.g. 'm' in 'automne', 'p' in 'baptême') are not
+        present in the speech signal, and their Ph-G consistency is therefore
+        0%.<br>
         <br>
         • Case of 'e' followed by two identical consonants. In version 1 of
         Manulex_infra, the orthographic sequences 'emm' and 'enn' were coded as
-        graphemic groups whereas the 'e' followed by other doublets ('err',
-        'ett') were coded separately from the consonants that follow (for
-        example 'e.rr' in 'terre'). This particular coding of 'emm' and 'enn'
-        satisfied the segmentation principle aimed at highlighting
-        inconsistencies in word pronunciation, as these two orthographic
-        sequences were pronounced differently in 'antenne' and 'flemme' than in
-        'solennel' and 'patiemment'. However, given the high number of adverbs
-        in 'emment' sharing the 'emm'-/am/ association (patiemment, évidemment,
-        récemment), a word like 'femme' was coded as consistent. In version 2 of
-        the database, the coding is standardized by marking the 'e' when
-        followed by two identical consonants. For exemple, the word 'femme' is
-        now coded as 'f.e[CC].mm.e' (with CC to indicate 2 identical
-        consonants). Its low consistency results from the fact that 'e' followed
-        by a doublet is usually pronounced /e/ or /E/. This coding is only
-        realized for G-Ph associations, not for Ph-G associations, since in
-        French, the presence of a doublet in not cued in the speech signal. <br>
+        one single graphemic group while the 'e' followed by other doublets
+        ('err', 'ett') were coded as two (e.g. 'e.rr' in 'terre'). The coding of
+        'emm' and 'enn' responded to the segmentation principle aimed at
+        highlighting inconsistencies in word pronunciation, as these two
+        orthographic sequences were pronounced differently in “antenne” and
+        'flemme' than in “solennel ” and “patiemment” However, given the high
+        number of adverbs in 'emment' sharing the association 'emm'-/am/
+        (patiemment, évidemment, récemment), a word like “femme” was erroneously
+        described as consistent. The coding for reading, was standardized by
+        sorting 'e' when followed by two identical consonants as .e[CC]. (with
+        CC to indicate 2 identical consonants) so the word 'woman' is now coded
+        as 'f.e[CC].mm.e'. This change in coding now describes the word “femme”
+        with a low consistency score because 'e' followed by a doublet is
+        usually pronounced /e/ or /E/. This coding of 'e[CC]' only occurs for
+        G-Ph associations but not for Ph-G associations since, in French,
+        nothing signals the presence of the doublet in the speech signal when
+        words are pronounced orally. This coding of G-Ph associations with
+        'e[CC]' applies to all words in order to highlight inconsistencies, thus
+        also to words such as 'ennui' coded 'e[CC]-@.nn-n.u-8.i-i'. <br>
         <br>
-        • Case of words including -eill or -eil not preceded by 'u' (e. g.,
-        'abeille', 'bienveillant', 'sommeil'). The coding has been modified in
-        'eil' or 'eill'. In these groups the sequence 'ill' is always associated
-        with the semi-vowel /j/, never with the consonant /l/<br>
+        • Coding has been modified when -eill or -eil are not preceded by 'u'
+        ('abeille', 'bienveillant', 'sommeil'). 'eil' and 'eill' are not a
+        single block where 'ill' is always associated with the semi-vowel /j/,
+        never with the consonant /l/.<br>
         <br>
-        • The finals of verbs in -ent are, in the reading direction (G-Ph),
-        segmented 'en.t' in the version 2 of Manulex-infra. This segmentation is
-        comparable to that of the forms in '-ant', '-ont', '-ons', ..., (an .t,
-        on.t, on.s) <br>
+        • Verb endings in -ent are, when reading is considered (G-Ph), segmented
+        'en.t'. It is comparable to the description of verb endings in '-ant',
+        '-ont', '-ons', ..., (an .t, on.t, on.s). <br>
         <br>
         • In order to eliminate some rare G-Ph or Ph-G associations, proper
-        names are excluded from the analyses. </p>
+        names are excluded from the analyses. In the absence of objective
+        criteria for exclusion foreign words (mainly English) were not excluded.
+      </p>
       <br>
       <br>
       <br>
