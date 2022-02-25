@@ -54,14 +54,14 @@
         phonologique, sont généralement estimées par un indice de consistance.
         Dans les écritures alphabétiques, la consistance des associations
         graphème-phonème (G-Ph) et phonème-graphème (Ph-G) est un facteur
-        critique dans l'apprentissage de la lecture et de l'écriture. Le terme
-        "graphème" est utilisé ici pour désigner une lettre ou un groupe de
-        lettres qui correspond à un phonème; le français possédant des graphèmes
-        de plusieurs lettres tels que 'ou', 'an', 'un', 'in', 'eu', 'ch' et
-        'gn'. L'indice de consistance G-Ph est égal à la fréquence avec laquelle
-        une association G-Ph particulière est rencontrée dans les mots, divisée
-        par la fréquence totale du graphème, quelle que soit sa prononciation.
-        La consistance d'une association G-Ph reflète donc la probabilité
+        critique dans l'apprentissage de la lecture et de l'écriture. Le terme <i>graphème</i>
+        est utilisé ici pour désigner une lettre ou un groupe de lettres qui
+        correspond à un phonème; le français possédant des graphèmes de
+        plusieurs lettres tels que 'ou', 'an', 'un', 'in', 'eu', 'ch' et 'gn'.
+        L'indice de consistance G-Ph est égal à la fréquence avec laquelle une
+        association G-Ph particulière est rencontrée dans les mots, divisée par
+        la fréquence totale du graphème, quelle que soit sa prononciation. La
+        consistance d'une association G-Ph reflète donc la probabilité
         d'associer un phonème particulier à un graphème donné. Par exemple,
         l'indice de consistance G-Ph de l'association 'ch'-&gt;/S/ (comme dans
         le mot 'chat' /Sa/) est obtenu en divisant la fréquence d'occurrence de
@@ -76,15 +76,15 @@
       <p> La consistance peut varier considérablement en fonction de la position
         sérielle du graphème ou du phonème dans le mot. En particulier, en
         raison de l'évolution de la morphologie flexionnelle et dérivationnelle
-        du français, les terminaisons de mots sont souvent muettes, ce qui rend
-        l'orthographe moins transparente. La fréquence et la consistance des
-        correspondances G-Ph et Ph-G sont donc estimées en fonction de la
+        du français, les terminaisons de mots sont souvent silencieuses, ce qui
+        rend l'orthographe moins transparente. La fréquence et la consistance
+        des correspondances G-Ph et Ph-G sont donc estimées en fonction de la
         position sérielle relative dans le mot: initiale (premier
         graphème/phonème), finale (dernier graphème/phonème), et intermédiaire
         (graphèmes/phonèmes au milieu des mots). <i>Manulex_Infra</i> fournit
-        également deux types de consistance et de fréquence moyennes : l'une
-        lexicale (par type) et l'autre textuelle (par token). La fréquence
-        lexicale eflète le nombre de mots différents dans la base de données qui
+        également deux types de consistance et de fréquence : l'une lexicale
+        (par type) et l'autre textuelle (par token). La fréquence lexicale
+        reflète le nombre de mots différents dans la base de données qui
         incluent les correspondances G-Ph et Ph-G, chaque mot n'étant compté
         qu'une seule fois. La fréquence textuelle reflète le nombre de mots
         (différents ou identiques) dans les textes qui incluent la
@@ -102,30 +102,26 @@
         corresponde à un seul phonème. Nos choix ont été régis par un second
         principe central selon lequel la segmentation doit mettre en évidence
         les inconsistances dans la prononciation/écriture des mots. </p>
-      <p> La présence de lettres muettes en finales de nombreux mots conduit à
-        envisager différemment l’analyse des associations G-Ph et des
-        associations Ph-G. Dans le sens de la lecture, les associations G-Ph
-        portant sur les graphèmes muets peuvent être décrites comme associant un
-        graphème à un ‘phonème’ muet (e.g., ‘d’ dans ‘lourd’, ‘p’ dans ‘loup’,
-        flexion de genre ‘e’ dans ‘amie’, flexion de nombre ‘s’ dans ‘tables’).
-        Par exemple, l’association G-Ph finale du mot ‘nid’ terminant par un ‘d’
-        muet est très consistante car le ‘d’ final des mots est rarement
-        prononcé. A l’inverse, le ‘d’ final du mot ‘sud’ est prononcé, et la
-        consistance de l’association entre le graphème ‘d’ et le phonème /d/ en
-        finale de mot est donc faible. La présence de lettres muettes en finales
-        des mots doit être considérée différemment dans l’analyse des
-        associations entre phonèmes et graphèmes (Ph-G ; sens de l’écriture)
-        dans la mesure où le graphème muet (e.g., 'd' dans 'foulard', /fulaR/)
-        ne peut être prédit (à moins d'en connaitre la présence). La solution
-        adoptée dans <i>Manulex_Infra v.2</i> pour décrire les associations
-        Ph-G est de rassembler les lettres muettes finales avec le dernier
-        phonème prononcé. Par exemple, dans le sens de l’écriture, le mot
-        ‘renard’ a un /R/ qui code '-rd', tout comme les mots 'gare' et 'terre'
-        dans lesquels /R/ code '-re' ou '-rre' (la prononciation de ‘renard’
-        devient ainsi compatible avec les erreurs de production orthographique
-        ‘renarre’, ou ‘renare’). Le principe de codage est similaire lorsque le
-        dernier graphème prononcé correspond à une voyelle: la finale de 'dans'
-        et 'étang' est /ã/ pour '-ans' et '-ang'. </p>
+      <p> La présence de lettres silencieuses en finales de nombreux mots
+        conduit à envisager différemment l’analyse des associations G-Ph et des
+        associations Ph-G.&nbsp; Par exemple, l’association G-Ph finale du mot
+        ‘nid’ terminant par un ‘d’ muet est très consistante car le ‘d’ final
+        des mots est rarement prononcé. A l’inverse, le ‘d’ final du mot ‘sud’
+        est prononcé, et la consistance de l’association entre le graphème ‘d’
+        et le phonème /d/ en finale de mot est donc faible. La présence de
+        lettres muettes en finales des mots doit être considérée différemment
+        dans l’analyse des associations entre phonèmes et graphèmes (Ph-G ; sens
+        de l’écriture) dans la mesure où le graphème silencieux (e.g., 'd' dans
+        'foulard', /fulaR/) ne peut être prédit (à moins d'en connaitre la
+        présence). La solution adoptée dans <i>Manulex_Infra v.2</i> pour
+        décrire les associations Ph-G est de rassembler les lettres muettes
+        finales avec le dernier phonème prononcé. Par exemple, dans le sens de
+        l’écriture, le mot ‘renard’ a un /R/ qui code '-rd', tout comme les mots
+        'gare' et 'terre' dans lesquels /R/ code '-re' ou '-rre' (la
+        prononciation de ‘renard’ devient ainsi compatible avec les erreurs de
+        production orthographique ‘renarre’, ou ‘renare’). Le principe de codage
+        est similaire lorsque le dernier graphème prononcé correspond à une
+        voyelle: la finale de 'dans' et 'étang' est /ã/ pour '-ans' et '-ang'. </p>
       <p><b>Rime finale des mots.</b> Les relations grapho-phonologiques pour
         les finales de mots sont également envisagées dans le cadre contextuel
         plus large correspondant à la rime phonologique finale. Ces analyses
@@ -136,23 +132,23 @@
         /R/-‘rd’ mais il constitue un élément de la rime finale du mot
         /aR/-‘ard’. La rime phonologique finale des mots, telle que considérée
         dans la version 2 de <i>Manulex_Infra</i>, correspond à la dernière
-        voyelle du mot, différente d’un schwa, des éventuelles semi-voyelles la
+        voyelle du mot (différente d’un schwa), des éventuelles semi-voyelles la
         précédant, et des éventuelles semi-voyelles, consonnes, ou schwa qui la
         suivent. Par exemple ‘ion-/jɔ͂/’ dans ‘nation’, ‘illard-/jaR/’ dans
         ‘billard’. La semi-voyelle précédant la voyelle est considérée comme
         faisant partie de la rime car la diversité des orthographes possibles
         est fonction de la prise en compte ou non de la semi-voyelle. Par
-        exemple, sur les substantifs, un /ɔ͂/ (‘on’) final peut s’orthographier
-        de manière multiple (-on, -ons, -ond, -om, -ont, -onc, -omb, -ong),
-        alors que dans les finales en /jɔ͂/, le ‘on’ n’est pas suivit de
-        consonnes muettes (-ion, -yon, -illon dans 'nation', 'rayon',
-        'bouillon'). L'estimation du degré de difficulté de lecture ou
-        d'écriture des mots doit tenir compte à la fois de la consistance et de
-        la fréquence des associations, sur les G et Ph, ou sur la rime. Une
-        association très consistante mais rare est une source de difficultés. A
-        noter également que certains mots, tel que le mot 'femme', peuvent être
-        très consistants dans l’analyse portant sur les rimes mais très peu
-        consistants dans l’analyse portant sur les G-Ph ou Ph-G.</p>
+        exemple, sur les substantifs, /ɔ͂/ (‘on’) final peut s’orthographier de
+        manière multiple (-on, -ons, -ond, -om, -ont, -onc, -omb, -ong), alors
+        que dans les finales en /jɔ͂/, le ‘on’ n’est pas suivit de consonnes
+        muettes (-ion, -yon, -illon dans 'nation', 'rayon', 'bouillon').
+        L'estimation du degré de difficulté de lecture ou d'écriture des mots
+        doit tenir compte à la fois de la consistance et de la fréquence des
+        associations, sur les G et Ph, ou sur la rime. Une association très
+        consistante mais rare est une source de difficultés. A noter également
+        que certains mots, tel que le mot 'femme', peuvent être très consistants
+        dans l’analyse portant sur les rimes mais très peu consistants dans
+        l’analyse portant sur les G-Ph ou Ph-G.</p>
       <p><b>Analyses incluant ou non les formes fléchies nominales de genre et
           de nombre, ainsi que les flexions verbales.</b> Les relations
         grapho-phonologiques (consistance et fréquence G-Ph, Ph-G, rime) sont
