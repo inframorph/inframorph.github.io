@@ -70,25 +70,25 @@
         phonème. Les mêmes associations étaient exploitées pour analyser celles
         entre phonème et graphème (sens de l’écriture). Ce choix engendre des
         problèmes d'estimation des consistances surtout –mais pas exclusivement-
-        lorsque les mots incluent des lettres muettes finales. Par exemple, pour
-        la lecture, l’association G-Ph finale du mot ‘nid’ qui se termine par un
-        ‘d’ muet sera fortement consistante car le ‘d’ final des mots est
-        rarement prononcé. A l’inverse, le ‘d’ final du mot ‘sud’ est prononcé,
-        et la consistance de l’association entre le graphème ‘d’ et le phonème
-        /d/ en finale de mot sera donc faible. La présence de lettres muettes en
-        finales des mots doit être considérée différemment dans les analyses
-        concernant l'écriture (associations Ph-G) dans la mesure où un graphème
-        muet (par exemple, le 'd' de 'foulard', /fulaR/) ne peut être prédit (à
-        moins d'en connaître l'existence). La solution adoptée dans
-        Manulex_Morpho v.2 pour décrire les associations Ph-G est de rassembler
-        les lettres muettes finales avec le dernier phonème prononcé. Par
-        exemple, dans le sens de l’écriture, le mot ‘renard’ a un /R/ qui code
-        '-rd', tout comme les mots 'gare' et 'terre' dans lesquels /R/ code
-        '-re' ou '-rre' (la prononciation de ‘renard’ devient ainsi compatible
-        avec les erreurs de production orthographique ‘renarre’, ou ‘renare’).
-        Le principe de codage est similaire lorsque le dernier graphème prononcé
-        correspond à une voyelle: la finale de 'dans' et 'étang' est /ã/ pour
-        '-ans' et '-ang'. <br>
+        lorsque les mots incluent des lettres silencieuses en finale. Par
+        exemple, pour la lecture, l’association G-Ph finale du mot ‘nid’ qui se
+        termine par un ‘d’ muet sera très consistante car le ‘d’ final des mots
+        est rarement prononcé. A l’inverse, le ‘d’ final du mot ‘sud’ est
+        prononcé, et la consistance de l’association entre le graphème ‘d’ et le
+        phonème /d/ en finale de mot sera donc faible. La présence de lettres
+        silencieuses en finales des mots doit être considérée différemment dans
+        les analyses concernant l'écriture (associations Ph-G) dans la mesure où
+        un graphème silencieux (par exemple, le 'd' de 'foulard', /fulaR/) ne
+        peut être prédit (à moins d'en connaître l'existence). La solution
+        adoptée dans Manulex_Morpho v.2 pour décrire les associations Ph-G est
+        de rassembler les lettres silencieuses finales avec le dernier phonème
+        prononcé. Par exemple, dans le sens de l’écriture, le mot ‘renard’ a un
+        /R/ qui code '-rd', tout comme les mots 'gare' et 'terre' dans lesquels
+        /R/ code '-re' ou '-rre' (la prononciation de ‘renard’ devient ainsi
+        compatible avec les erreurs de production orthographique ‘renarre’, ou
+        ‘renare’). Le principe de codage est similaire lorsque le dernier
+        graphème prononcé correspond à une voyelle: la finale de 'dans' et
+        'étang' est /ã/ pour '-ans' et '-ang'. <br>
         <br>
         • Codage positionnel des associations. 1) Les flexions nominales de
         genre, suivies ou non d'une flexion de nombre, sont codées comme
@@ -109,7 +109,7 @@
         comme graphème final ). Ce choix assure le même traitement de ces
         consonnes/voyelles selon que le nom soit au singulier ou au pluriel. <br>
         <br>
-        • Consistance Ph-G (pour l'écriture) lorsque les graphèmes muets
+        • Consistance Ph-G (pour l'écriture) lorsque les graphèmes silencieux
         correspondent à des flexions nominales (genre ou nombre) ou à des
         supports de dérivation/flexion: les flexions nominales sont indicées
         avec le code ‘3’ et les supports de dérivation/flexion avec le code ‘6’
@@ -118,23 +118,24 @@
         probabilité que le mot termine par un ‘e’ est de 100% si le mot est
         fléchi en genre, et la probabilité que le mot termine en ‘s’ ou ‘x’ est
         de 100% si le mot est fléchi en nombre. La consistance des supports de
-        dérivation/flexion qui correspondent à des consonnes muettes (e. g., ‘t’
-        dans ‘aliment’, ‘d’ dans ‘grand’) est également fixée à 100% puisque le
-        graphème muet peut être prédit à partir de la connaissance des mots
-        dérivés (‘alimentation’, ‘alimentaire’, ‘grandeur’) ou des mots fléchis
-        (‘grande’). La prédiction des graphèmes muets est généralement simple
-        pour les finales en –b (plomb), -d (grand), -g (long, sang), -l
-        (cristal, gentil), -p (camp), -t (absent) même si la prononciation du
-        graphème peut différer entre les formes dérivées/fléchies (par exemple
-        ‘g’ prononcé /g/ dans ‘longueur’ et /ʒ/ dans ‘longer’). Les graphèmes en
-        –f sont, quant à eux, transformés en /v/ lors des dérivations/flexions
-        (sportif – sportive, neuf – neuve), la présence d’un –v en finale de
-        mots étant illégale en français. Enfin, les finales en –s (gros, gris,
-        frais), en –x (choix, doux), et –z (riz) sont associées aux phonèmes
-        /s/, /z/, /S/ et les consistances Ph-G sont donc estimées en fonction de
-        la probabilité de chacun des graphèmes muets à partir du phonème (e. g.
-        le /z/ de ‘choisir’ est compatible avec ‘x’ dans le mot ‘choix’, mais un
-        ‘s’ (*chois) ou un ‘z’ (*choiz) sont également possibles. <br>
+        dérivation/flexion qui correspondent à des consonnes silencieuses (e.
+        g., ‘t’ dans ‘aliment’, ‘d’ dans ‘grand’) est également fixée à 100%
+        puisque le graphème silencieux peut être prédit à partir de la
+        connaissance des mots dérivés (‘alimentation’, ‘alimentaire’,
+        ‘grandeur’) ou des mots fléchis (‘grande’). La prédiction des graphèmes
+        silencieux est généralement simple pour les finales en –b (plomb), -d
+        (grand), -g (long, sang), -l (cristal, gentil), -p (camp), -t (absent)
+        même si la prononciation du graphème peut différer entre les formes
+        dérivées/fléchies (par exemple ‘g’ prononcé /g/ dans ‘longueur’ et /ʒ/
+        dans ‘longer’). Les graphèmes en –f sont, quant à eux, transformés en
+        /v/ lors des dérivations/flexions (sportif – sportive, neuf – neuve), la
+        présence d’un –v en finale de mots étant illégale en français. Enfin,
+        les finales en –s (gros, gris, frais), en –x (choix, doux), et –z (riz)
+        sont associées aux phonèmes /s/, /z/, /S/ et les consistances Ph-G sont
+        donc estimées en fonction de la probabilité de chacun des graphèmes
+        silencieux à partir du phonème (e. g. le /z/ de ‘choisir’ est compatible
+        avec ‘x’ dans le mot ‘choix’, mais un ‘s’ (*chois) ou un ‘z’ (*choiz)
+        sont également possibles. <br>
         <br>
         • Ajout, pour chaque mot, de l’association G-Ph ou Ph-G la moins
         consistante, et de l’association la moins fréquente. A noter que
@@ -184,8 +185,8 @@
         • Afin d’éliminer quelques rares associations G-Ph ou Ph-G, les noms
         propres sont exclus des analyses. <br>
         <br>
-        • Ajout de la structure phonologique CV et identification des clusters
-        consonantiques<br>
+        • Ajout de la structure phonologique Consonne-Voyelle et identification
+        des clusters consonantiques<br>
         <br>
         <br>
       </p>
