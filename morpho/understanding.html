@@ -4,11 +4,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Manulex-Morpho v.2 - Understanding Manulex-Morpho</title>
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
       href="resolution_small.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
       href="resolution_smallsmall.css">
   </head>
   <body>
@@ -22,8 +20,7 @@
             </td>
             <td align="center" width="69%"><span class="style-titre">Manulex
                 Morpho </span></td>
-            <td align="center" width="17%"><img src="images/white.JPG" height="41"
-
+            <td align="center" width="17%"><img src="images/white.JPG" height="41"
                 width="22"></td>
           </tr>
         </tbody>
@@ -53,126 +50,76 @@
       <titrepage>
         <h1>Understanding <i>Manulex Morpho</i></h1>
       </titrepage>
-      <p>In what follows, the symbols &lt; &gt; represent a field entry on the
-        website. For example, &lt;e&gt; means that the embedded within the
-        symbol is entered in a field of the website.<br>
+      <p>The phonetic transcription is based on a simplified phonetic alphabet
+        created for the database (the correspondence with the international
+        phonetic alphabet can be found on the page 'Description/Phonetic codes')<br>
         <br>
-        Quotation marks " : used to refer to the spelling of a word in French.
-        For example: the word "char".<br>
-        <br>
-        The symbols / / : used to refer to the phonetic transcription of a word
-        or a grapheme in French, for example /SaR/ for the word "char". <br>
-        <br>
-        The phonetic transcription relies on a simplified phonetic alphabet
-        created for the database (correspondence between the International
-        Phonetic Alphabet and the simplified version used in to code the
-        database can be found on the page “Description/Phonetic codes”)<br>
       </p>
       <p> <b>General information</b><br>
         <br>
-        • Orthographic code of the word <br>
-        <br>
+        • Word spelling <br>
         • Phonological code of the word<br>
+        • Syntactic class (NC: noun; VER: verb; ADJ: adjective; PRO: pronoun;
+        PRE: preposition; CON: conjunction; DET: determiner)<br>
+        • Frequency of use (according to <i>Manulex</i>; Lété et al., 2004).
+        The frequency index is the frequency of the word per million words
+        (value derived from the F value of the Manulex database)<br>
+        • Phonological structure CV1 (C=consonant, v=vowel, Y=semi-vowel)<br>
+        • Phonological structure CV2 (O=occlusive, F=fricative, N=nasal
+        consonant, L=phonemes /l/ and /R/, v=vowel, Y=semi-vowel) <br>
+        • Presence/absence of consonant cluster in the word (column
+        'clusterCC'), and identity of CC and CCC clusters (column 'cluster_id')
         <br>
-        • Syntactic category (NC: noun; NP: proper noun; VER: verb; ADJ:
-        adjective; PRO: pronoun; PRE: preposition; CON: conjunction; DET:
-        determinant))<br>
-        <br>
-        • Frequency of use (according to <i>Manulex</i>; Lété et al., 2004)
-        provides textual frequency expressed as the number of occurrences of a
-        word per million (value derived from the F value in the Manulex
-        database)<br>
-        <br>
-        • Word segmentation into its component graphemes (the symbol '.'
-        separates two consecutive graphemes)<br>
-        <br>
-        • Phonological segmentation of a word reflecting its segmentation into
-        graphemes<br>
-        <br>
-        • Grapheme-Phoneme correspondences: this field allows users to identify
-        words that contain any given correspondence(s). In this field, a
-        Grapheme-Phoneme correspondence will be tagged using the &lt;-&gt;
-        symbol to separate a grapheme to the left from the corresponding phoneme
-        to the right: searching for the grapheme “ch” pronounced /S/ will be
-        entered as &lt;ch-S&gt;. The symbol &lt;.&gt; will be used to delimit a
-        succession of Grapheme-Phoneme correspondences in a word. The sequence
-        will be enclosed in brackets using a left parenthesis &lt;(&gt; to tag
-        the beginning of a word, and a right parenthesis &lt;)&gt; to tag the
-        end of a word. To search for the word “char” pronounced /SaR/, the user
-        will enter the sequence &lt;(ch-S.a-a.r-R)&gt; in the field. Tags can
-        also be used to produce a list of all the words that include a specific
-        Grapheme-Phoneme correspondence: entering &lt;(ch-S.&gt; in the field,
-        will list all the words starting with the grapheme “ch” pronounced /S/.
-        Conversely, entering &lt;.ch-S)&gt; in the field, will list all the
-        words ending with the grapheme “ch” pronounced /S/.<br>
-        <br>
-        ! ! Note that, in version 2 of Manulex-Morpho, the grapho-phonemic
-        segmentations are different from the phono-graphemic segmentations in
-        order to take into account (essentially) the presence of graphemes that
-        are silent in speech (see tab 'changes to ver.1'). </p>
+        • Segmentation of the word into graphemes (the '.' character indicates a
+        grapheme boundary)<br>
+        • Phonological segmentation reflecting the grapheme segmentation<br>
+        • Grapheme-phoneme associations. This field allows to locate words
+        including a particular association. &lt;-&gt; is used to link grapheme
+        and corresponding phoneme, and &lt;.&gt; to delineate grapheme-phoneme
+        associations. In addition, an open parenthesis &lt;(&gt; signals the
+        beginning of the word, and a closing parenthesis &lt;)&gt; its end: for
+        example, "(ch-S.a-a.r-R)" for the word "char" /SaR/). These characters
+        can be used to help locate words with a particular grapheme-phoneme
+        association at the beginning or end of the word (e.g., searching for
+        &lt;(ch-S.&gt; or &lt;.ch-S)&gt; provides a list of words including the
+        association at the beginning or end of the word, respectively).<br>
+        ! ! Note: in version 2 of Manulex-Morpho, the grapho-phonemic
+        segmentations are different from the phono-graphemic segmentations, to
+        mainly take into account silent graphemes (see tab "Modifications of
+        ver.1"). </p>
+      <br>
       <p> <b>Word length indices </b><br>
         <br>
-        • Number of letters <br>
-        • Number of phonemes <br>
-        • Number of graphemes <br>
-        • Number of syllables<br>
+        • Number of letters, phonemes, graphemes, and syllables <br>
         <br>
-        <b>Frequency of Grapheme-Phoneme correspondences </b><br>
         <br>
-        <i>(Note. Textual frequency calculated for per token estimates
-          corresponds to the frequency of a word per million words. The
-          frequency of Phoneme-Grapheme correspondences is the same as the
-          frequency of Grapheme-Phoneme correspondences)</i>.<br>
+        <b>Frequency and consistency of G-Ph and Ph-G associations, for the
+          whole word and as a function of position in the word (initial, final,
+          internal) </b><br>
         <br>
-        • Mean frequency of Grapheme-Phoneme correspondences, per type count <br>
-        • id., per token<br>
-        • Frequency of the Grapheme-Phoneme correspondence at the beginning of a
-        word, per type<br>
-        • id., per token<br>
-        • Mean frequency of Grapheme-Phoneme correspondences in an intermediate
-        position in a word (i.e. not at the beginning or the end), per type <br>
-        • id., per token<br>
-        • Frequency of the Grapheme-Phoneme correspondence(s) at the end of a
-        word, per type. In Manulex-Morpho version 2, several graphemes can be
-        coded as final graphemes. For example, the final 'd' of the word
-        'foulard' is also considered as a final grapheme when followed by a
-        number inflection (‘s’ in 'foulards'). See the 'change to ver.1' tab.<br>
-        • id., per token<br>
+        <i>(Notes. Estimates made by type and by token. The textual frequency
+          index is the frequency of the word per million words. In
+          Manulex-Morpho version 2, several graphemes can be coded as final
+          graphemes. For example, the 'd' of the word 'foulard' is considered as
+          a final grapheme in 'foulards', before the nominal inflection of the
+          number. See tab "ver.1 modifications".</i>.<br>
         <br>
-        <b>Consistency of Grapheme-Phoneme correspondences</b><br>
+        • Average frequency of G-Ph and Ph-G associations<br>
+        • Frequency of the initial G-Ph and Ph-G association<br>
+        • Average frequency of internal G-Ph and Ph-G associations (non-initial
+        and non-final)<br>
+        • Frequency of final G-Ph and Ph-G association(s) <br>
         <br>
-        • Mean consistency of Grapheme-Phoneme correspondences, per type count <br>
-        • id., per token<br>
-        • Consistency of the Grapheme-Phoneme correspondence at the beginning of
-        a word, per type<br>
-        • id., per token<br>
-        • Mean consistency of Grapheme-Phoneme correspondences in an
-        intermediate position in a word (i.e. not at the beginning or the end),
-        per type<br>
-        • id., per token<br>
-        • Consistency of the Grapheme-Phoneme correspondence(s) at the end of a
-        word, per type. In Manulex-Morpho version 2, several graphemes can be
-        coded as final graphemes. For example, the final 'd' of the word
-        'foulard' is also considered as a final grapheme when followed by a
-        number inflection (‘s’ in 'foulards'). See the 'change to ver.1' tab.<br>
-        • id., per token<br>
+        • Average consistency of G-Ph associations <br>
+        • At word initial<br>
+        • In internal position (non-initial and non-final)<br>
+        • At the end of the word<br>
         <br>
-        <b>Consistency of Phoneme-Grapheme correspondences</b><br>
+        • Average consistency of Ph-G associations <br>
+        • At word initial<br>
+        • In internal position (non-initial and non-final)<br>
+        • At the end of the word<br>
         <br>
-        • Mean consistency of Phoneme-Grapheme correspondences, per type count<br>
-        • id., per token<br>
-        • Consistency of the Phoneme-Grapheme correspondence at the beginning of
-        a word, per type<br>
-        • id., per token<br>
-        • Mean consistency of Phoneme-Grapheme correspondences in an
-        intermediate position in a word, per type count<br>
-        • id., per token<br>
-        • Consistency of the Phoneme-Grapheme correspondence(s) at the end of a
-        word, per type. In Manulex-Morpho version 2, several graphemes can be
-        coded as final graphemes. For example, the final 'd' of the word
-        'foulard' is also considered as a final grapheme when followed by a
-        number inflection (‘s’ in 'foulards'). See the 'change to ver.1' tab.<br>
-        • id., per token<br>
         <br>
       </p>
       <p></p>
