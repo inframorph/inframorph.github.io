@@ -11,7 +11,7 @@ html * {
 p {
 	font-size: 14px;
 	color: #333;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
 	margin-top: 1em; /* on ajoute un espace avant chaque paragraphe */
 	;
 	margin-left: 3.5em;
@@ -19,7 +19,7 @@ p {
 	text-align: left;
 	margin-bottom: 0px;
 	line-height: 1.4em;
-  letter-spacing:0.001em;
+  letter-spacing:0.002em;
 }
 p2 {
 	font-size: 16px;
@@ -33,7 +33,6 @@ p2 {
 	margin-bottom: 0px;
 	line-height: 1.4em;
   letter-spacing:0.01em;
-  font-weight: 500;
 }
 
 
