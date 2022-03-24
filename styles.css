@@ -91,7 +91,7 @@ margin-left:15%;
 
 .style-titre {   /* Titre du site 'manulex Morpho' */
   font-size: 23px;
-	font-family: 'ubuntu', Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	color: #315f66;
 	text-shadow: 0px 0px 0px #CCC;
 	letter-spacing: 0.2px;
@@ -102,6 +102,7 @@ margin-left:15%;
 	font-weight: 100;
 	margin-right: auto;
 	text-align: center;
+    	line-height: 1.4em;
 }
 
 .style-langue {
