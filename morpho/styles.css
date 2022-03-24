@@ -250,7 +250,7 @@ background:#ffffff;
 #menu-demo2 li:hover li a{
 	color: #575050;
 	/* text-transform: inherit; */
-	background: #e3e3e3;
+	background: #f5f5f5;
 	text-decoration: none;
 }
 #menu-demo2 li:hover a, #menu-demo2 li li:hover a{
