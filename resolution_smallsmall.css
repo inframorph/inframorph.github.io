@@ -255,9 +255,13 @@ background:#ffffff;
 background: #f5f5f5;
 	text-decoration: none;
 }
-#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+#menu-demo2 li:hover a{
 	color: #3999b5;
 	text-decoration : underline;
+}
+	#menu-demo2 li li:hover a{
+	color: #3999b5;
+	text-decoration : none;
 }
 	
 	

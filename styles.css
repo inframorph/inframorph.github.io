@@ -262,18 +262,25 @@ background:#ffffff;
 	font-size: 17px;
 	font-variant: normal;
 }
+
 #menu-demo2 li:hover li a{
 	color: #575050;
 	/* text-transform: inherit; */
 background: #f5f5f5;
 	text-decoration: none;
 }
-#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+#menu-demo2 li:hover a{
 	color: #3999b5;
 	text-decoration : underline;
+}
+	#menu-demo2 li li:hover a{
+	color: #3999b5;
+	text-decoration : none;
 }
 	
 	
 	/*Tablet View*▼/
+
+	
 
 	
