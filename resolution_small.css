@@ -93,7 +93,8 @@ margin-left:15%;
 }
 
 .style-langue {
-	font-size: 19px;
+	font-size: 17px;
+    	font-variant: small-caps;
 	margin-left: 10px;
 	color: #8695AC;
 	margin-bottom: 0px;
@@ -212,7 +213,7 @@ background:#ffffff;
 background:#fcfcfc;
 }
 #menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
-background:#fcfcfc;
+background:#ffffff;
 }
 #menu-demo2 li:nth-child(4):hover, #menu-demo2 li:nth-child(2) li:hover{
 background:#ffffff;
@@ -251,7 +252,7 @@ background:#ffffff;
 #menu-demo2 li:hover li a{
 	color: #575050;
 	/* text-transform: inherit; */
-	background: #e3e3e3;
+background: #f5f5f5;
 	text-decoration: none;
 }
 #menu-demo2 li:hover a, #menu-demo2 li li:hover a{
