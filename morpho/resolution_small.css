@@ -92,7 +92,8 @@ margin-left:15%;
 }
 
 .style-langue {
-	font-size: 19px;
+	font-size: 17px;
+  font-variant: small-caps;
 	margin-left: 10px;
 	color: #8695AC;
 	margin-bottom: 0px;
