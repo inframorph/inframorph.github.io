@@ -9,7 +9,7 @@ html * {
 	font-family: Arial, Helvetica, sans-serif;
 }
 p {
-	font-size: 15px;
+	font-size: 14px;
 	color: #333;
 	font-family: Arial, Helvetica, sans-serif;
 	margin-top: 1em; /* on ajoute un espace avant chaque paragraphe */
@@ -114,7 +114,7 @@ margin-left:15%;
 }
 
 .style-titre {   /* Titre du site 'manulex Morpho' */
-  font-size: 23px;
+  font-size: 25px;
 	font-family: Roboto, Helvetica, Arial, sans-serif;
 	color: #ffffff;
 	text-shadow: 0px 0px 0px #CCC;
@@ -146,7 +146,7 @@ margin-left:15%;
 }
 
 .style-langue {
-	font-size: 28px;
+	font-size: 26px;
   font-variant: small-caps;
 	margin-left: 10px;
   margin-top: 0px;
@@ -184,7 +184,7 @@ margin-bottom:20px;
 	color: #646269;
 	font-family: Roboto,Arial, Helvetica, sans-serif;
 
-	font-size: 14px;
+	font-size: 16px;
 	margin-left: 1px;
 	margin-right: 0px;	
 }
