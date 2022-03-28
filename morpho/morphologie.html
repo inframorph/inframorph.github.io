@@ -3,230 +3,279 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Manulex-Morpho v.2 - Morphologie</title>
-    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
-      href="resolution_small.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
-      href="resolution_smallsmall.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Ubuntu:wght@500&amp;display=swap"
+
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&amp;display=swap"
+
+      rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="../styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
+
+      href="../resolution_small.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
+
+      href="../resolution_smallsmall.css">
   </head>
   <body>
-    <header> <br>
-      <table width="100%" border="0">
+    <header>
+      <table width="100%" border="0" bgcolor="#25222c">
         <tbody>
           <tr>
-            <td align="left" width="17%">
-              <p class="style-langue"> <a style="text-decoration:none" href="indexEngl.html">
-                  English</a></p>
+            <td align="left" width="6%">
+              <p class="style-langue"> <a href="indexEngl.html" style="text-decoration:none"><font
+
+                    color="#40a0bd">English</font> </a></p>
             </td>
-            <td align="center" width="69%"><span class="style-titre">Manulex
-                Morpho </span></td>
-            <td align="center" width="17%"><img src="images/white.JPG" height="41"
-                width="22"></td>
+            <td align="center" width="69%"><span class="style-titre"><br>
+                Les mots écrits à l'école élémentaire -<br>
+                Caractéristiques orthographiques, grapho-phonologiques, et
+                morphologiques<br>
+                <br>
+              </span></td>
+            <td align="center" width="10%"><br>
+            </td>
           </tr>
         </tbody>
       </table>
       <br>
       <ul id="menu-demo2">
         <li><a href="../index.html">Accueil</a></li>
-        <li><a href="#">Description▼</a>
+        <li><a href="#">Bases▼</a>
           <ul>
-            <li><a href="index.html">Description générale</a></li>
-            <li><a href="comprendre.html">Comprendre Manulex-Morpho</a></li>
-            <li><a href="phonetique.html">Codes phonétiques</a></li>
-            <li><a href="morphologie.html">Codes morphologiques</a></li>
-            <li><a href="changes.html">Modifications de la ver.1</a></li>
+            <li><a href="../infra/index.html">Manulex-infra</a></li>
+            <li><a href="../morpho/index.html">Manulex-morpho</a></li>
+            <li><a href="../eqolinfra/index.html">Eqol-infra</a></li>
           </ul>
         </li>
-        <li><a href="telechargement.html">Téléchargement</a></li>
+        <li><a href="../liens.html">Liens</a></li>
+        <li><a href="../contact.html">Contact</a></li>
       </ul>
     </header>
     <main></main>
     <footer></footer>
-    <article>
-      <h6> <br>
-        <br>
-        <br>
-      </h6>
-      <titrepage>
-        <h1>Codes morphologiques</h1>
-      </titrepage>
-      <p>Les caractères 3, 4, 6 et 7 sont utilisés pour indicer les unités
-        morphémiques (les autres chiffres correspondent à des codes «machine»
-        pour des phonèmes, voir « codes phonétiques »). La liste complète des
-        unités morphologiques considérées est fournie dans le tableau en bas de
-        page.<br>
-        <br>
-        <b>Flexions nominales de genre et de nombre</b>: Le code 3 indice les
-        flexions de genre et de nombre. Par exemple, le mot 'photos' est codé en
-        finale par le morphogramme '3s' auquel correspond le code phonologique
-        '3#' (le caractère '#' est utilisé pour coder un graphème silencieux,
-        voir « code phonétiques »). Par contre, dans le mot 'parfois', le 's'
-        final ne correspond pas à une flexion de nombre et le graphème final est
-        donc simplement codé 's' auquel correspond le caractère '#'. <br>
-        <br>
-        <b>Flexions verbales monophonémiques</b> : Le code 4 indice les
-        terminaisons verbales. Par exemple, le mot 'aiderai' est codé en finale
-        avec '4ai' auquel correspond le code phonologique '4E'. Dans le mot
-        'vrai', le graphème 'ai' ne correspond pas à une terminaison verbale et
-        est donc codé simplement 'ai' auquel correspond 'E'. Il est important de
-        rappeler que, dans <i>Manulex-Morpho</i>, les associations G-Ph et Ph-G
-        intégrées pour le codage de la morphologie verbale ne prennent en compte
-        que celles qui sont monophonémiques. Par exemple: '4er' (chant-er), mais
-        pas '4ir' ni '4oir (fin-ir, sav-oir); '4ai' (je chant-ai) mais pas
-        '4erai' (je chant-erai); '4ez' (vous chant-ez) et non '4iez' ou '4issez'
-        (vous chant-iez, vous fin-issez)."<br>
-        <br>
-        <b>Finales de mots entendues dans les formes fléchies/dérivées</b>
-        (supports de flexion et/ou dérivation) : Le code 6 indice les
-        différentes marques flexionnelles ou dérivationnelles de fin de mot. Par
-        exemple, le 's' final de 'gris' est codé '6s' auquel correspond le code
-        '6#'. Il en est de même pour le 'd' de 'grand' (codé '6d') qui sert
-        d'appui à une forme fléchie (grande) et à une dérivation (grandeur). <br>
-        <br>
-        <b>Adverbes en &lt;(m)ent&gt;</b> : Le code 7 indice le 'ent' des
-        adverbes de manière, en '-ment'. Par exemple, '7ent' est associé au code
-        phonologique '7@' dans le mot 'simplement'. <br>
-        <br>
-      </p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <table align="center" width="70%" cellspacing="0" cellpadding="0" border="0">
-        <colgroup><col width="44"> <col width="197"> <col width="80"> </colgroup>
-        <tbody>
-          <tr bgcolor="#FFFFCC">
-            <td colspan="2" bgcolor="#C0C0C0"><strong>Unités</strong></td>
-            <td align="center" width="77" bgcolor="#C0C0C0"><strong>Codes</strong></td>
-          </tr>
-          <tr>
-            <td colspan="2" bgcolor="#FFFFFF"><i>Genre et nombre</i></td>
-            <td align="center" bgcolor="#FFFFFF">3</td>
-          </tr>
-          <tr>
-            <td width="44" bgcolor="#FFFFFF">&nbsp;</td>
-            <td width="234" bgcolor="#FFFFFF">-e, -s, -x</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td colspan="2" bgcolor="#FFFFFF"><i>Flexions verbales
-                monophonémiques</i></td>
-            <td align="center" bgcolor="#FFFFFF">4</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">Infinitif: -er</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">Participe présent: -ant</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">Participe passé: -é, -i, -u, -is, -t</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">Autres formes conjuguées</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-e, -es, -ez, -ent, -est, -eu</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-a, -as, -ai, -ais, -ait</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-i, -is, -it, -ons, -ont</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-u, -û, -ût</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-d, -ds, -pt, -s, -t, -ts, -x</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td colspan="2" bgcolor="#FFFFFF"><i>Finales de mots entendues dans</i></td>
-            <td align="center" bgcolor="#FFFFFF">6</td>
-          </tr>
-          <tr>
-            <td colspan="2" bgcolor="#FFFFFF"><i>les formes fléchies/dérivées</i></td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-er, -et, -êt</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-an, aen, -ean, -en, -enn</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-ain, -aim, -in, -ein, (-en)</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-on, -om, -oin</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-un, -um</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-il</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-b, -c, -ch, -ck, -d, -f, -g, -gu,</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-l, -ll, -m, -n, -nn, -p, -q, -r,</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-s, -ss, -t, -tt, -v, -w, -x, -z</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-          <tr>
-            <td colspan="2" bgcolor="#FFFFFF"><i>Adverbes terminant en -ment</i></td>
-            <td align="center" bgcolor="#FFFFFF">7</td>
-          </tr>
-          <tr>
-            <td bgcolor="#FFFFFF">&nbsp;</td>
-            <td bgcolor="#FFFFFF">-(m)ent</td>
-            <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <br>
-      <hr> <br>
-      <br>
-    </article>
+    <br>
+    <table width="100%" border="0">
+      <tbody>
+        <tr>
+          <td align="left" width="20%" valign="top"> <br>
+            <br>
+            <br>
+            <ul id="vertmenu">
+              <li><a href="index.html">DESCRIPTION</a></li>
+              <li><a href="comprendre.html">COMPRENDRE MANULEX-MORPHO</a></li>
+              <li><a href="phonetique.html">CODES PHONETIQUES</a></li>
+              <li><a style="color:#2E86C1" href="morphologie.html"><b>CODES
+                    MORPHOLOGIQUES</b></a></li>
+              <li><a href="changes.html">MODIFICATIONS VER.1</a></li>
+              <li><a href="telechargement.html">TELECHARGEMENT</a></li>
+            </ul>
+          </td>
+          <td aligne="left" width="90%">
+            <h2> Manulex-Morpho</h2>
+            <hr width="100%" color="2e86c1"> <br>
+            <article> <titrepage>
+                <h1>Codes morphologiques</h1>
+              </titrepage>
+              <p>Les caractères 3, 4, 6 et 7 sont utilisés pour indicer les
+                unités morphémiques (les autres chiffres correspondent à des
+                codes «machine» pour des phonèmes, voir « codes phonétiques »).
+                La liste complète des unités morphologiques considérées est
+                fournie dans le tableau en bas de page.<br>
+                <br>
+                <b>Flexions nominales de genre et de nombre</b>: Le code 3
+                indice les flexions de genre et de nombre. Par exemple, le mot
+                'photos' est codé en finale par le morphogramme '3s' auquel
+                correspond le code phonologique '3#' (le caractère '#' est
+                utilisé pour coder un graphème silencieux, voir « code
+                phonétiques »). Par contre, dans le mot 'parfois', le 's' final
+                ne correspond pas à une flexion de nombre et le graphème final
+                est donc simplement codé 's' auquel correspond le caractère '#'.
+                <br>
+                <br>
+                <b>Flexions verbales monophonémiques</b> : Le code 4 indice les
+                terminaisons verbales. Par exemple, le mot 'aiderai' est codé en
+                finale avec '4ai' auquel correspond le code phonologique '4E'.
+                Dans le mot 'vrai', le graphème 'ai' ne correspond pas à une
+                terminaison verbale et est donc codé simplement 'ai' auquel
+                correspond 'E'. Il est important de rappeler que, dans <i>Manulex-Morpho</i>,
+                les associations G-Ph et Ph-G intégrées pour le codage de la
+                morphologie verbale ne prennent en compte que celles qui sont
+                monophonémiques. Par exemple: '4er' (chant-er), mais pas '4ir'
+                ni '4oir (fin-ir, sav-oir); '4ai' (je chant-ai) mais pas '4erai'
+                (je chant-erai); '4ez' (vous chant-ez) et non '4iez' ou '4issez'
+                (vous chant-iez, vous fin-issez)."<br>
+                <br>
+                <b>Finales de mots entendues dans les formes fléchies/dérivées</b>
+                (supports de flexion et/ou dérivation) : Le code 6 indice les
+                différentes marques flexionnelles ou dérivationnelles de fin de
+                mot. Par exemple, le 's' final de 'gris' est codé '6s' auquel
+                correspond le code '6#'. Il en est de même pour le 'd' de
+                'grand' (codé '6d') qui sert d'appui à une forme fléchie
+                (grande) et à une dérivation (grandeur). <br>
+                <br>
+                <b>Adverbes en &lt;(m)ent&gt;</b> : Le code 7 indice le 'ent'
+                des adverbes de manière, en '-ment'. Par exemple, '7ent' est
+                associé au code phonologique '7@' dans le mot 'simplement'. <br>
+                <br>
+              </p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <table align="center" width="70%" cellspacing="0" cellpadding="0"
+
+                border="0">
+                <colgroup><col width="44"> <col width="197"> <col width="80">
+                </colgroup>
+                <tbody>
+                  <tr bgcolor="#FFFFCC">
+                    <td colspan="2" bgcolor="#C0C0C0"><strong>Unités</strong></td>
+                    <td align="center" width="77" bgcolor="#C0C0C0"><strong>Codes</strong></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" bgcolor="#FFFFFF"><i>Genre et nombre</i></td>
+                    <td align="center" bgcolor="#FFFFFF">3</td>
+                  </tr>
+                  <tr>
+                    <td width="44" bgcolor="#FFFFFF">&nbsp;</td>
+                    <td width="234" bgcolor="#FFFFFF">-e, -s, -x</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" bgcolor="#FFFFFF"><i>Flexions verbales
+                        monophonémiques</i></td>
+                    <td align="center" bgcolor="#FFFFFF">4</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">Infinitif: -er</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">Participe présent: -ant</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">Participe passé: -é, -i, -u, -is, -t</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">Autres formes conjuguées</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-e, -es, -ez, -ent, -est, -eu</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-a, -as, -ai, -ais, -ait</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-i, -is, -it, -ons, -ont</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-u, -û, -ût</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-d, -ds, -pt, -s, -t, -ts, -x</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" bgcolor="#FFFFFF"><i>Finales de mots
+                        entendues dans</i></td>
+                    <td align="center" bgcolor="#FFFFFF">6</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" bgcolor="#FFFFFF"><i>les formes
+                        fléchies/dérivées</i></td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-er, -et, -êt</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-an, aen, -ean, -en, -enn</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-ain, -aim, -in, -ein, (-en)</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-on, -om, -oin</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-un, -um</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-il</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-b, -c, -ch, -ck, -d, -f, -g, -gu,</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-l, -ll, -m, -n, -nn, -p, -q, -r,</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-s, -ss, -t, -tt, -v, -w, -x, -z</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" bgcolor="#FFFFFF"><i>Adverbes terminant en
+                        -ment</i></td>
+                    <td align="center" bgcolor="#FFFFFF">7</td>
+                  </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                    <td bgcolor="#FFFFFF">-(m)ent</td>
+                    <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <br>
+              <hr> <br>
+              <br>
+            </article>
+          </td>
+          <td align="right" width="5%"> <br>
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
     <br>
     <br>
   </body>

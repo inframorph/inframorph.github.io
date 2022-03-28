@@ -5,144 +5,188 @@
     <title>Manulex-Morpho v.2 - Comprendre Manulex-Morpho</title>
     <meta name="description" content="Associations graphème-phonème à l'école élémentaire">
     <meta name="keywords" content="Manulex-morpho,Manulex_morpho,Manulex-infra,Manulex,graphème-phonème,apprentissage de la lecture">
-    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
-      href="resolution_small.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
-      href="resolution_smallsmall.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Ubuntu:wght@500&amp;display=swap"
+
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&amp;display=swap"
+
+      rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="../styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
+
+      href="../resolution_small.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
+
+      href="../resolution_smallsmall.css">
   </head>
   <body>
-    <header> <br>
-      <table width="100%" border="0">
+    <header>
+      <table width="100%" border="0" bgcolor="#25222c">
         <tbody>
           <tr>
-            <td align="left" width="17%">
-              <p class="style-langue"> <a style="text-decoration:none" href="indexEngl.html">
-                  English</a></p>
+            <td align="left" width="6%">
+              <p class="style-langue"> <a href="indexEngl.html" style="text-decoration:none"><font
+
+                    color="#40a0bd">English</font> </a></p>
             </td>
-            <td align="center" width="69%"><span class="style-titre">Manulex
-                Morpho </span></td>
-            <td align="center" width="17%"><img src="images/white.JPG" height="41"
-                width="22"></td>
+            <td align="center" width="69%"><span class="style-titre"><br>
+                Les mots écrits à l'école élémentaire -<br>
+                Caractéristiques orthographiques, grapho-phonologiques, et
+                morphologiques<br>
+                <br>
+              </span></td>
+            <td align="center" width="10%"><br>
+            </td>
           </tr>
         </tbody>
       </table>
       <br>
       <ul id="menu-demo2">
         <li><a href="../index.html">Accueil</a></li>
-        <li><a href="#">Description▼</a>
+        <li><a href="#">Bases▼</a>
           <ul>
-            <li><a href="index.html">Description générale</a></li>
-            <li><a href="comprendre.html">Comprendre Manulex-Morpho</a></li>
-            <li><a href="phonetique.html">Codes phonétiques</a></li>
-            <li><a href="morphologie.html">Codes morphologiques</a></li>
-            <li><a href="changes.html">Modifications de la ver.1</a></li>
+            <li><a href="../infra/index.html">Manulex-infra</a></li>
+            <li><a href="../morpho/index.html">Manulex-morpho</a></li>
+            <li><a href="../eqolinfra/index.html">Eqol-infra</a></li>
           </ul>
         </li>
-        <li><a href="telechargement.html">Téléchargement</a></li>
+        <li><a href="../liens.html">Liens</a></li>
+        <li><a href="../contact.html">Contact</a></li>
       </ul>
     </header>
     <main></main>
     <footer></footer>
-    <article>
-      <h6> <br>
-        <br>
-        <br>
-      </h6>
-      <titrepage>
-        <h1>Comprendre <i>Manulex Morpho</i></h1>
-      </titrepage>
-      <p> <br>
-        La transcription phonétique s'appuie sur un alphabet phonétique
-        simplifié créé pour la base de données (la correspondance avec
-        l'alphabet phonétique international se trouve sur la page
-        Description/Codes phonétiques utilisés)<br>
-      </p>
-      <p> <b>Informations générales</b><br>
-        <br>
-        • Code orthographique du mot<br>
-        <br>
-        • Code phonologique du mot<br>
-        <br>
-        • Classe syntaxique (NC: nom; NP: nom propre; VER: verbe; ADJ: adjectif;
-        PRO: pronom; PRE: préposition; CON: conjonction; DET: déterminant)<br>
-        <br>
-        • Fréquence d'usage (selon <i>Manulex</i> ; Lété et al., 2004).
-        L’indice de fréquence textuelle est la fréquence du mot par million de
-        mots (valeurs dérivées des valeurs F de la base Manulex)<br>
-        <br>
-        • Structure phonologique CV1 (C=consonne, v=voyelle, Y=semi-voyelle)<br>
-        <br>
-        • Structure phonologique CV2 (O=occlusive, F=fricative, N=consonne
-        nasale, L=phonème /l/ et /R/, v=voyelle, Y=semi-voyelle)<br>
-        <br>
-        • Présence/absence de cluster consonantique dans le mot (colonne
-        'clusterCC'), et identité des clusters CC et CCC (colonne 'cluster_id')<br>
-        <br>
-        • Segmentation du mot en graphème (le caractère '.' désigne une
-        frontière graphémique)<br>
-        <br>
-        • Segmentation phonologique reflétant la segmentation graphémique<br>
-        <br>
-        • Associations graphème-phonème. Ce champ permet de localiser les mots
-        incluant une association particulière. Le caractère &lt;-&gt; est
-        utilisé pour relier graphème et phonème correspondant, et le caractère
-        &lt;.&gt; pour délimiter les associations graphème-phonème. En outre,
-        une parenthèse gauche &lt;(&gt; signale le début du mot, et une
-        parenthèse droite &lt;)&gt; sa fin : par exemple, (ch-S.a-a.r-R) pour le
-        mot 'char' /SaR/). Ces caractères peuvent être utilisés afin de
-        faciliter la localisation de mots présentant une association
-        graphème-phonème particulière en début ou en fin de mot (par exemple, la
-        recherche de &lt;(ch-S.&gt; ou de &lt;.ch-S)&gt; fournit la liste des
-        mots incluant l'association &lt;ch-S&gt; en début ou en fin de mot,
-        respectivement).<br>
-        <br>
-        ! ! A noter: dans la version 2 de Manulex-Morpho, les segmentations
-        grapho-phonémiques sont différentes des segmentations phono-graphémiques
-        afin de tenir compte (essentiellement) de la présence de graphèmes qui
-        sont muets à l’oral (voir onglet "Modifications de la ver.1"). </p>
-      <p> <b>Indices de longueur du mot</b><br>
-        <br>
-        • Nombre de lettres, phonèmes, graphèmes, et syllabes<br>
-        <br>
-        <br>
-        <b>Fréquence et consistance des associations Graphème-Phonème (G-Ph) et
-          Phonème-Graphème (Ph-G) pour l'ensemble du mot et en fonction de la
-          position dans le mot (initiale, finale, interne)</b><br>
-        <br>
-        <i>(Notes. Estimations réalisées par type et par token. L’indice de
-          fréquence textuelle est la fréquence du mot par million de mots. Dans
-          la version 2 de Manulex-Morpho, plusieurs graphèmes peuvent être codés
-          comme graphèmes finaux. Par exemple, le ‘d’ du mot ‘foulard’ est
-          considéré comme graphème final dans 'foulards", devant la flexion
-          nominale du nombre. Voir onglet "modifications de la ver.1". </i><br>
-        <br>
-        • Fréquence moyenne des associations G-Ph et Ph-G<br>
-        • Fréquence de l'association G-Ph et Ph-G initiale<br>
-        • Fréquence moyenne des associations G-Ph et Ph-G internes (non-initiale
-        et non-finale) <br>
-        • Fréquence de(s) association(s) G-Ph et Ph-G finale(s).<br>
-        <br>
-        <br>
-        • Consistance moyenne des associations G-Ph<br>
-        • A l'initiale du mot<br>
-        • En position interne (non-initiale et non-finale)<br>
-        • En fin de mot. <br>
-        <br>
-        <br>
-        • Consistance moyenne des associations Ph-G<br>
-        • A l'initiale du mot<br>
-        • En position interne (non-initiale et non-finale)<br>
-        • En fin de mot.<br>
-        <br>
-      </p>
-      <br>
-      <br>
-      <hr> <br>
-      <br>
-      <br>
-      <br>
-    </article>
+    <br>
+    <table width="100%" border="0">
+      <tbody>
+        <tr>
+          <td align="left" width="20%" valign="top"> <br>
+            <br>
+            <br>
+            <ul id="vertmenu">
+              <li><a href="index.html">DESCRIPTION</a></li>
+              <li><a style="color:#2E86C1" href="comprendre.html"><b>COMPRENDRE
+                    MANULEX-MORPHO</b></a></li>
+              <li><a href="phonetique.html">CODES PHONETIQUES</a></li>
+              <li><a href="morphologie.html">CODES MORPHOLOGIQUES</a></li>
+              <li><a href="changes.html">MODIFICATIONS VER.1</a></li>
+              <li><a href="telechargement.html">TELECHARGEMENT</a></li>
+            </ul>
+          </td>
+          <td aligne="left" width="90%">
+            <h2> Manulex-Morpho</h2>
+            <hr width="100%" color="2e86c1"> <br>
+            <article> <titrepage>
+                <h1>Comprendre <i>Manulex Morpho</i></h1>
+              </titrepage>
+              <p> La transcription phonétique s'appuie sur un alphabet
+                phonétique simplifié créé pour la base de données (la
+                correspondance avec l'alphabet phonétique international se
+                trouve sur la page Description/Codes phonétiques utilisés)<br>
+              </p>
+              <p> <b>Informations générales</b><br>
+                <br>
+                • Code orthographique du mot<br>
+                <br>
+                • Code phonologique du mot<br>
+                <br>
+                • Classe syntaxique (NC: nom; NP: nom propre; VER: verbe; ADJ:
+                adjectif; PRO: pronom; PRE: préposition; CON: conjonction; DET:
+                déterminant)<br>
+                <br>
+                • Fréquence d'usage (selon <i>Manulex</i> ; Lété et al., 2004).
+                L’indice de fréquence textuelle est la fréquence du mot par
+                million de mots (valeurs dérivées des valeurs F de la base
+                Manulex)<br>
+                <br>
+                • Structure phonologique CV1 (C=consonne, v=voyelle,
+                Y=semi-voyelle)<br>
+                <br>
+                • Structure phonologique CV2 (O=occlusive, F=fricative,
+                N=consonne nasale, L=phonème /l/ et /R/, v=voyelle,
+                Y=semi-voyelle)<br>
+                <br>
+                • Présence/absence de cluster consonantique dans le mot (colonne
+                'clusterCC'), et identité des clusters CC et CCC (colonne
+                'cluster_id')<br>
+                <br>
+                • Segmentation du mot en graphème (le caractère '.' désigne une
+                frontière graphémique)<br>
+                <br>
+                • Segmentation phonologique reflétant la segmentation
+                graphémique<br>
+                <br>
+                • Associations graphème-phonème. Ce champ permet de localiser
+                les mots incluant une association particulière. Le caractère
+                &lt;-&gt; est utilisé pour relier graphème et phonème
+                correspondant, et le caractère &lt;.&gt; pour délimiter les
+                associations graphème-phonème. En outre, une parenthèse gauche
+                &lt;(&gt; signale le début du mot, et une parenthèse droite
+                &lt;)&gt; sa fin : par exemple, (ch-S.a-a.r-R) pour le mot
+                'char' /SaR/). Ces caractères peuvent être utilisés afin de
+                faciliter la localisation de mots présentant une association
+                graphème-phonème particulière en début ou en fin de mot (par
+                exemple, la recherche de &lt;(ch-S.&gt; ou de &lt;.ch-S)&gt;
+                fournit la liste des mots incluant l'association &lt;ch-S&gt; en
+                début ou en fin de mot, respectivement).<br>
+                <br>
+                ! ! A noter: dans la version 2 de Manulex-Morpho, les
+                segmentations grapho-phonémiques sont différentes des
+                segmentations phono-graphémiques afin de tenir compte
+                (essentiellement) de la présence de graphèmes qui sont muets à
+                l’oral (voir onglet "Modifications de la ver.1"). </p>
+              <p> <b>Indices de longueur du mot</b><br>
+                <br>
+                • Nombre de lettres, phonèmes, graphèmes, et syllabes<br>
+                <br>
+                <br>
+                <b>Fréquence et consistance des associations Graphème-Phonème
+                  (G-Ph) et Phonème-Graphème (Ph-G) pour l'ensemble du mot et en
+                  fonction de la position dans le mot (initiale, finale,
+                  interne)</b><br>
+                <br>
+                <i>(Notes. Estimations réalisées par type et par token. L’indice
+                  de fréquence textuelle est la fréquence du mot par million de
+                  mots. Dans la version 2 de Manulex-Morpho, plusieurs graphèmes
+                  peuvent être codés comme graphèmes finaux. Par exemple, le ‘d’
+                  du mot ‘foulard’ est considéré comme graphème final dans
+                  'foulards", devant la flexion nominale du nombre. Voir onglet
+                  "modifications de la ver.1". </i><br>
+                <br>
+                • Fréquence moyenne des associations G-Ph et Ph-G<br>
+                • Fréquence de l'association G-Ph et Ph-G initiale<br>
+                • Fréquence moyenne des associations G-Ph et Ph-G internes
+                (non-initiale et non-finale) <br>
+                • Fréquence de(s) association(s) G-Ph et Ph-G finale(s).<br>
+                <br>
+                <br>
+                • Consistance moyenne des associations G-Ph<br>
+                • A l'initiale du mot<br>
+                • En position interne (non-initiale et non-finale)<br>
+                • En fin de mot. <br>
+                <br>
+                <br>
+                • Consistance moyenne des associations Ph-G<br>
+                • A l'initiale du mot<br>
+                • En position interne (non-initiale et non-finale)<br>
+                • En fin de mot.<br>
+                <br>
+              </p>
+              <br>
+              <br>
+              <br>
+              <br>
+            </article>
+          </td>
+          <td align="right" width="5%"> <br>
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
     <br>
     <br>
   </body>
