@@ -3,194 +3,251 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Manulex-Infra v.2 - Understanding Manulex-Infra</title>
-    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
-      href="resolution_small.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
-      href="resolution_smallsmall.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Ubuntu:wght@500&amp;display=swap"
+
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&amp;display=swap"
+
+      rel="stylesheet">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="../styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
+
+      href="../resolution_small.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
+
+      href="../resolution_smallsmall.css">
   </head>
   <body>
-    <header> <br>
-      <table width="100%" border="0">
+    <header>
+      <table width="100%" border="0" bgcolor="#25222c">
         <tbody>
           <tr>
-            <td align="left" width="17%">
-              <p class="style-langue"> <a style="text-decoration:none" href="index.html">
-                  Français</a></p>
+            <td align="left" width="6%">
+              <p class="style-langue"> <a href="index.html" style="text-decoration:none"><font
+
+                    color="#40a0bd">Français</font> </a></p>
             </td>
-            <td align="center" width="69%"><span class="style-titre">Manulex
-                Infra </span></td>
-            <td align="center" width="17%"><img src="images/white.JPG" height="41"
-                width="22"></td>
+            <td align="center" width="69%"><span class="style-titre"><br>
+                Orthographic, grapho-phonological, and morphological
+                characteristics <br>
+                of written words from French elementary textbooks<br>
+                <br>
+              </span></td>
+            <td align="center" width="10%"><br>
+            </td>
           </tr>
         </tbody>
       </table>
       <br>
       <ul id="menu-demo2">
         <li><a href="../indexEngl.html">Home</a></li>
-        <li><a href="#">Description▼</a>
+        <li><a href="#">Databases▼</a>
           <ul>
-            <li><a href="indexEngl.html">General description</a></li>
-            <li><a href="calculsEngl.html">Understanding Manulex-infra</a></li>
-            <li><a href="phonetiqueEngl.html">Phonetic codes</a></li>
-            <li><a href="changesEngl.html">Changes from ver.1</a></li>
+            <li><a href="indexEngl.html">Manulex-infra</a></li>
+            <li><a href="../morpho/indexEngl.html">Manulex-morpho</a></li>
+            <li><a href="../eqolinfra/indexEngl.html">Eqol-infra</a></li>
           </ul>
         </li>
-        <li><a href="telechargementEngl.html">Download</a></li>
+        <li><a href="../links.html">Links</a></li>
+        <li><a href="../contactEngl.html">Contact</a></li>
       </ul>
     </header>
     <main></main>
     <footer></footer>
-    <article> <br>
-      <h6> <a> </a></h6>
-      <titrepage>
-        <h1>Understanding Manulex_infra</h1>
-      </titrepage>
-      <p><b>Consistency and Frequency of the grapho-phonological associations :</b>
-        The predictability of a word’s pronunciation or spelling from
-        grapheme-phoneme (G-Ph) or phoneme-grapheme (Ph-G) associations is
-        typically estimated by a consistency index. The consistency of G-Ph and
-        Ph-G associations is a critical factor in learning to read and write in
-        an alphabetical script. The term <i>grapheme</i> refers to a letter or
-        a group of letters that corresponds to a phoneme. In French, graphemes
-        include groups of letters such as 'ou', 'an', 'un', 'in',&nbsp;
-        'eu',&nbsp; 'ch', and 'gn'. The G-Ph consistency index is equal to the
-        frequency of occurrence of a particular G-Ph association in words,
-        divided by the total frequency of the grapheme, regardless of its
-        pronunciation. The consistency of a G-Ph association thus reflects the
-        probability of associating a particular phoneme with a given grapheme.
-        For example, the G-Ph consistency index of the association 'ch'-&gt;/S/
-        (as in the word 'chat' /Sa/) is obtained by dividing the frequency of
-        occurrence of the association 'ch'-&gt;/S/ by the frequency of the
-        grapheme 'ch', whatever its pronunciation (including /S/, but also /k/
-        for instance, as in 'choral' /koRal/). The G-Ph consistency index is
-        then multiplied by 100. Its maximum value is 100. Similarly, the Ph-G
-        consistency index is equal to the frequency of occurrence of a
-        particular phoneme-grapheme correspondence, divided by the total
-        frequency of the phoneme multiplied by 100, regardless of the phoneme’s
-        orthography..</p>
-      <p>Consistency can vary considerably depending on a grapheme or a
-        phoneme’s position within a word. Due to the evolution of inflectional
-        and derivational morphology rules in French, word endings are often
-        silent, which reduces their orthographic consistency. Thus, to better
-        characterize grapheme-phoneme correspondences in the database, frequency
-        and consistency were computed separately based on their position in
-        words: initial (first grapheme/phoneme), final (last grapheme/phoneme),
-        or intermediate (graphemes/phonemes in the middle of words). <i>Manulex_infra</i>
-        also provides two types of consistency and frequency data: the lexical
-        and the textual statistics. Lexical frequency (i.e., count by type)
-        reflects the number of different words in the database that include a
-        G-Ph or Ph-G correspondence of interest while each word is counted only
-        once. Textual frequency (i.e. count per token) reflects the number of
-        words in the texts that include a correspondence while each word is
-        counted as often as it appears in the corpus. Thus, the frequency and
-        consistency values of the G-Ph and Ph-G correspondences do not account
-        for the frequency of occurrence of words in the texts (rare or frequent
-        words) when a count by type is considered, while the frequency and
-        consistency values are weighted by the frequency of occurrence of words
-        in a count by token. </p>
-      <p>Graphemic segmentation of words tends to be easy in French. As far as
-        possible, each segment matches a single phoneme. When word segmentation
-        was ambiguous, the decision was based on a second principle that
-        segmentation should highlight inconsistencies in each word’s
-        pronunciation and writing.</p>
-      <p> Silent letters at the end of many words required a different approach
-        to analyse G-Ph associations and Ph-G associations. For example, the
-        word “nid” ends with a silent 'd' and the final G-Ph is highly
-        consistent when reading French, because 'd' in word final position is
-        almost always silent. Conversely the final 'd' of the word 'sud' is
-        pronounced, and the consistency of the rare G-Ph association 'd' -&gt;
-        /d/ is low. When representing reading related statistics in <i>Manulex-infra</i>
-        v.2, silent letters G-Ph are coded with the character '#' (e.g., 'd' in
-        'lourd', 'p' in 'loup', nominal gender inflection 'e' in 'amie', nominal
-        number inflection 's' in 'tables'). However, segmenting word final
-        silent letters proceeded differently when spelling was considered,
-        because silent letters are not pronounced and can therefore not be
-        reported as standalone units (as in the word “foulard” pronounced
-        /fulaR/ where the final 'd' is silent and cannot be matched to a
-        phoneme). In this case, the final silent letters were merged with the
-        last audible letter so that accurate statistics could be reported. For
-        example, silent final ‘d’ in the word 'renard' is coded with the final
-        ‘r’ (/R/-rd), in the word 'terre' silent final ‘e’ is coded with the
-        final 'rr' (/R/-rre), and in the word 'gare' silent final ‘e’ is coded
-        with the&nbsp; final 'r' (/R/-re). The same logic was applied to coding
-        other silent letters in words such as 'jamais' or 'lait' (/E/-ais, and
-        /E/-ait respectively).</p>
-      <p></p>
-      <p><b>Final rime of words.</b> Additional analyses are provided by
-        considering the broader contextual framework corresponding to
-        phonological word finals. These additional analyses also respond to the
-        observation that, in orthographic production, orthographic choices are
-        partially a function of the rime context. In this case, a silent
-        grapheme such as 'd' in the word 'renard' is no longer integrated into
-        the Ph-G association /R/-'rd' but as part of the final rime of the word
-        /aR/-'ard'. In <i>Manulex-infra</i> v.2, the phonological rime is
-        defined as the last vowel of the word (different from a schwa), the
-        possible semi-vowels preceding it, and the possible semi-vowels,
-        consonants, or schwa following it. Note that a semi-vowel placed before
-        a vowel is part of the rime because the rime’s spelling pattern will
-        partially depend on whether a semi-vowel is present or not. For example,
-        nouns ending in /ɔ͂/ ('on') can be spelled in multiple ways (-on, -ons,
-        -ond, -om, -ont, -onc, -omb, -ong...), whereas words ending in /jɔ͂/ are
-        never spelled with a silent final consonants (-ion, -yon, -illon in
-        'nation', 'rayon', 'bouillon'). Similarly, The rime /aR/ can be spelled
-        in multiple ways (-ard, -art, -are, -ar, -arre, -ars) but paired with
-        /w/, /aR/ can only be spelled -oir or -oire. </p>
-      <p>Estimating the degree of difficulty of a word requires considering its
-        consistency and frequency at the level of its final rime, but also at
-        the level of G-Ph or Ph-G correspondences. Some words may be very
-        consistent at the rime level but very inconsistent at the G-Ph or Ph-G
-        level. For exemple, the word “femme” is very consistent when considering
-        the rime but inconsistent when considering G-Ph or Ph-G associations.</p>
-      <p></p>
-      <p><b>Analyses including or excluding nominal gender and nominal number
-          inflections and verbs inflections.</b> Grapho-phonological relations
-        (consistency and frequency G-Ph, Ph-G, rime) are analyzed either by
-        including: <br>
-        • all the orthographic forms encountered in the textbooks<br>
-        • or the orthographic forms that correspond to the associated lemma (or
-        lexeme) only. <br>
-        This second analysis allows a description of grapho-phonological
-        relations by excluding nominal gender and nominal number inflections
-        (final -e for feminine), number forms (final -s or -x for plurial) and
-        verbs inflections (person, tense, mode). Note that words that appear in
-        schoolbooks in an inflected form only are not included in this second
-        analysis, since this would mean that the simple, non-inflected form will
-        not be encountered by children when reading print. </p>
-      <p><b>Other variables coded in <i>Manulex_Infra v.2</i></b> The <i>Manulex_Infra
-          v.2</i> database provides additional information on the lexical
-        entries (more detailed description under the 'download' tab):):<br>
-        • Least consistent or least frequent G-Ph or Ph-G association of the
-        word (the association is provided along with the consistency or
-        frequency values)<br>
-        • Orthographic, phonological, graphemic, and syllabic length of the word<br>
-        • Textbook word frequency at grade 1, grade 2, and grade 1 to 5 based on
-        Manulex<br>
-        • Syllabic segmentation of the phonological code<br>
-        • G-Ph and Ph-G segmentation, phonological rime (and its orthographic
-        equivalent)<br>
-        • Orthographic neighborhood of the word according to the 'n-count' index
-        or the 'Levenshtein distance' index. The n-count index provides the
-        number of words generated if any letter in a word is substituted with
-        another one (e.g., 'rire' has as orthographic neighbors 'lire', 'rare',
-        and 'rime'). The higher the value, the denser the orthographic
-        neighborhood. The Levenhstein distance index (OLD20) provides the
-        average number of orthographic modifications that need to occur in a
-        word (letter substitution, letter transposition, letter deletion or
-        addition) to generate 20 of its closest orthographic neighbors. The
-        lower the value, the denser the orthographic neighborhood.<br>
-        • Number of non-homograph homophones (e.g., port-porc-pore) for
-        adjectives and nouns.<br>
-        • Average frequency of bigrams (groups of two adjacent letters) </p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <hr> <br>
-      <br>
-      <br>
-      <br>
-    </article>
+    <br>
+    <table width="100%" border="0">
+      <tbody>
+        <tr>
+          <td align="left" width="20%" valign="top"> <br>
+            <br>
+            <br>
+            <ul id="vertmenu">
+              <li><a href="indexEngl.html">DESCRIPTION</a></li>
+              <li><a style="color:#2E86C1" href="calculsEngl.html"><b>UNDERSTANDING
+                    MANULEX-INFRA</b></a></li>
+              <li><a href="phonetiqueEngl.html">PHONETIC CODES</a></li>
+              <li><a href="changesEngl.html">CHANGES FROM VER.1</a></li>
+              <li><a href="telechargementEngl.html">DOWNLOAD</a></li>
+            </ul>
+          </td>
+          <td aligne="left" width="90%">
+            <h2> Manulex-Infra</h2>
+            <hr width="100%" color="2e86c1"> <br>
+            <article> <titrepage>
+                <h1>Understanding Manulex_infra</h1>
+              </titrepage>
+              <p><b>Consistency and Frequency of the grapho-phonological
+                  associations :</b> The predictability of a word’s
+                pronunciation or spelling from grapheme-phoneme (G-Ph) or
+                phoneme-grapheme (Ph-G) associations is typically estimated by a
+                consistency index. The consistency of G-Ph and Ph-G associations
+                is a critical factor in learning to read and write in an
+                alphabetical script. The term <i>grapheme</i> refers to a
+                letter or a group of letters that corresponds to a phoneme. In
+                French, graphemes include groups of letters such as 'ou', 'an',
+                'un', 'in',&nbsp; 'eu',&nbsp; 'ch', and 'gn'. The G-Ph
+                consistency index is equal to the frequency of occurrence of a
+                particular G-Ph association in words, divided by the total
+                frequency of the grapheme, regardless of its pronunciation. The
+                consistency of a G-Ph association thus reflects the probability
+                of associating a particular phoneme with a given grapheme. For
+                example, the G-Ph consistency index of the association
+                'ch'-&gt;/S/ (as in the word 'chat' /Sa/) is obtained by
+                dividing the frequency of occurrence of the association
+                'ch'-&gt;/S/ by the frequency of the grapheme 'ch', whatever its
+                pronunciation (including /S/, but also /k/ for instance, as in
+                'choral' /koRal/). The G-Ph consistency index is then multiplied
+                by 100. Its maximum value is 100. Similarly, the Ph-G
+                consistency index is equal to the frequency of occurrence of a
+                particular phoneme-grapheme correspondence, divided by the total
+                frequency of the phoneme multiplied by 100, regardless of the
+                phoneme’s orthography..</p>
+              <p>Consistency can vary considerably depending on a grapheme or a
+                phoneme’s position within a word. Due to the evolution of
+                inflectional and derivational morphology rules in French, word
+                endings are often silent, which reduces their orthographic
+                consistency. Thus, to better characterize grapheme-phoneme
+                correspondences in the database, frequency and consistency were
+                computed separately based on their position in words: initial
+                (first grapheme/phoneme), final (last grapheme/phoneme), or
+                intermediate (graphemes/phonemes in the middle of words). <i>Manulex_infra</i>
+                also provides two types of consistency and frequency data: the
+                lexical and the textual statistics. Lexical frequency (i.e.,
+                count by type) reflects the number of different words in the
+                database that include a G-Ph or Ph-G correspondence of interest
+                while each word is counted only once. Textual frequency (i.e.
+                count per token) reflects the number of words in the texts that
+                include a correspondence while each word is counted as often as
+                it appears in the corpus. Thus, the frequency and consistency
+                values of the G-Ph and Ph-G correspondences do not account for
+                the frequency of occurrence of words in the texts (rare or
+                frequent words) when a count by type is considered, while the
+                frequency and consistency values are weighted by the frequency
+                of occurrence of words in a count by token. </p>
+              <p>Graphemic segmentation of words tends to be easy in French. As
+                far as possible, each segment matches a single phoneme. When
+                word segmentation was ambiguous, the decision was based on a
+                second principle that segmentation should highlight
+                inconsistencies in each word’s pronunciation and writing.</p>
+              <p> Silent letters at the end of many words required a different
+                approach to analyse G-Ph associations and Ph-G associations. For
+                example, the word “nid” ends with a silent 'd' and the final
+                G-Ph is highly consistent when reading French, because 'd' in
+                word final position is almost always silent. Conversely the
+                final 'd' of the word 'sud' is pronounced, and the consistency
+                of the rare G-Ph association 'd' -&gt; /d/ is low. When
+                representing reading related statistics in <i>Manulex-infra</i>
+                v.2, silent letters G-Ph are coded with the character '#' (e.g.,
+                'd' in 'lourd', 'p' in 'loup', nominal gender inflection 'e' in
+                'amie', nominal number inflection 's' in 'tables'). However,
+                segmenting word final silent letters proceeded differently when
+                spelling was considered, because silent letters are not
+                pronounced and can therefore not be reported as standalone units
+                (as in the word “foulard” pronounced /fulaR/ where the final 'd'
+                is silent and cannot be matched to a phoneme). In this case, the
+                final silent letters were merged with the last audible letter so
+                that accurate statistics could be reported. For example, silent
+                final ‘d’ in the word 'renard' is coded with the final ‘r’
+                (/R/-rd), in the word 'terre' silent final ‘e’ is coded with the
+                final 'rr' (/R/-rre), and in the word 'gare' silent final ‘e’ is
+                coded with the&nbsp; final 'r' (/R/-re). The same logic was
+                applied to coding other silent letters in words such as 'jamais'
+                or 'lait' (/E/-ais, and /E/-ait respectively).</p>
+              <p></p>
+              <p><b>Final rime of words.</b> Additional analyses are provided by
+                considering the broader contextual framework corresponding to
+                phonological word finals. These additional analyses also respond
+                to the observation that, in orthographic production,
+                orthographic choices are partially a function of the rime
+                context. In this case, a silent grapheme such as 'd' in the word
+                'renard' is no longer integrated into the Ph-G association
+                /R/-'rd' but as part of the final rime of the word /aR/-'ard'.
+                In <i>Manulex-infra</i> v.2, the phonological rime is defined
+                as the last vowel of the word (different from a schwa), the
+                possible semi-vowels preceding it, and the possible semi-vowels,
+                consonants, or schwa following it. Note that a semi-vowel placed
+                before a vowel is part of the rime because the rime’s spelling
+                pattern will partially depend on whether a semi-vowel is present
+                or not. For example, nouns ending in /ɔ͂/ ('on') can be spelled
+                in multiple ways (-on, -ons, -ond, -om, -ont, -onc, -omb,
+                -ong...), whereas words ending in /jɔ͂/ are never spelled with a
+                silent final consonants (-ion, -yon, -illon in 'nation',
+                'rayon', 'bouillon'). Similarly, The rime /aR/ can be spelled in
+                multiple ways (-ard, -art, -are, -ar, -arre, -ars) but paired
+                with /w/, /aR/ can only be spelled -oir or -oire. </p>
+              <p>Estimating the degree of difficulty of a word requires
+                considering its consistency and frequency at the level of its
+                final rime, but also at the level of G-Ph or Ph-G
+                correspondences. Some words may be very consistent at the rime
+                level but very inconsistent at the G-Ph or Ph-G level. For
+                exemple, the word “femme” is very consistent when considering
+                the rime but inconsistent when considering G-Ph or Ph-G
+                associations.</p>
+              <p></p>
+              <p><b>Analyses including or excluding nominal gender and nominal
+                  number inflections and verbs inflections.</b>
+                Grapho-phonological relations (consistency and frequency G-Ph,
+                Ph-G, rime) are analyzed either by including: <br>
+                • all the orthographic forms encountered in the textbooks<br>
+                • or the orthographic forms that correspond to the associated
+                lemma (or lexeme) only. <br>
+                This second analysis allows a description of grapho-phonological
+                relations by excluding nominal gender and nominal number
+                inflections (final -e for feminine), number forms (final -s or
+                -x for plurial) and verbs inflections (person, tense, mode).
+                Note that words that appear in schoolbooks in an inflected form
+                only are not included in this second analysis, since this would
+                mean that the simple, non-inflected form will not be encountered
+                by children when reading print. </p>
+              <p><b>Other variables coded in <i>Manulex_Infra v.2</i></b> The <i>Manulex_Infra
+                  v.2</i> database provides additional information on the
+                lexical entries (more detailed description under the 'download'
+                tab):):<br>
+                • Least consistent or least frequent G-Ph or Ph-G association of
+                the word (the association is provided along with the consistency
+                or frequency values)<br>
+                • Orthographic, phonological, graphemic, and syllabic length of
+                the word<br>
+                • Textbook word frequency at grade 1, grade 2, and grade 1 to 5
+                based on Manulex<br>
+                • Syllabic segmentation of the phonological code<br>
+                • G-Ph and Ph-G segmentation, phonological rime (and its
+                orthographic equivalent)<br>
+                • Orthographic neighborhood of the word according to the
+                'n-count' index or the 'Levenshtein distance' index. The n-count
+                index provides the number of words generated if any letter in a
+                word is substituted with another one (e.g., 'rire' has as
+                orthographic neighbors 'lire', 'rare', and 'rime'). The higher
+                the value, the denser the orthographic neighborhood. The
+                Levenhstein distance index (OLD20) provides the average number
+                of orthographic modifications that need to occur in a word
+                (letter substitution, letter transposition, letter deletion or
+                addition) to generate 20 of its closest orthographic neighbors.
+                The lower the value, the denser the orthographic neighborhood.<br>
+                • Number of non-homograph homophones (e.g., port-porc-pore) for
+                adjectives and nouns.<br>
+                • Average frequency of bigrams (groups of two adjacent letters)
+              </p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </article>
+          </td>
+          <td align="right" width="5%"> <br>
+            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
     <br>
     <br>
   </body>
