@@ -19,7 +19,7 @@ html * {
 p {
 	font-size: 15px;
 	color: #333;
-	font-family: Roboto, 'Roboto', Roboto, Arial, sans-serif;
+	font-family: roboto, 'roboto', Roboto, 'Roboto',  Arial, sans-serif;
 	margin-top: 1em; /* on ajoute un espace avant chaque paragraphe */
 	;
 	margin-left: 3.5em;
