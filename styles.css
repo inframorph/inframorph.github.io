@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 @font-face {
-    font-family: 'roboto';
+    font-family: 'roboto2';
     src: url('roboto-regular-webfont.woff2') format('woff2'),
          url('roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -19,7 +19,7 @@ html * {
 p {
 	font-size: 15px;
 	color: #333;
-	font-family: roboto, 'roboto', Roboto, 'Roboto',  Arial, sans-serif;
+	font-family: roboto2, 'roboto2', Arial, sans-serif;
 	margin-top: 1em; /* on ajoute un espace avant chaque paragraphe */
 	;
 	margin-left: 3.5em;
