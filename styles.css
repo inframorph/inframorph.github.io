@@ -12,7 +12,7 @@ html * {
 p {
 	font-size: 15px;
 	color: #333;
-	font-family: 'Roboto', sans-serif;
+	font-family: Roboto, 'Roboto', Roboto, Arial, sans-serif;
 	margin-top: 1em; /* on ajoute un espace avant chaque paragraphe */
 	;
 	margin-left: 3.5em;
@@ -21,6 +21,7 @@ p {
 	margin-bottom: 0px;
 	line-height: 1.35em;
   letter-spacing:0.002em;
+
 }
 p2 {
 	font-size: 16px;
@@ -160,6 +161,7 @@ margin-left:15%;
 table {     /* pour tables phonetique, morphologie */
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-size: 14px;	
+
 	margin: auto;
 }
 
