@@ -169,6 +169,21 @@ table {     /* pour tables phonetique, morphologie */
 	margin: auto;
 }
 
+
+table.table2 {     /* pour tables titre */
+
+background: -webkit-linear-gradient(right, #000, #666);
+background: linear-gradient(to bottom,  #212f3d ,  #566573);
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-size: 14px;	
+
+	margin: auto;
+}
+
+
+
+
+
 #vertmenu { 
     list-style: none;
     background-color: #ffffff ;
