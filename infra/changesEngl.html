@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"
 
       rel="stylesheet">
-    <title>Manulex-Infra v.2 - Main changes</title>
+    <title>Manulex-Morpho v.2 - Changes</title>
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="../styles.css">
     <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
 
@@ -42,7 +42,7 @@
         <li><a href="../indexEngl.html">Home</a></li>
         <li><a href="#">Databases▼</a>
           <ul>
-            <li><a href="indexEngl.html">Manulex-infra</a></li>
+            <li><a href="../infra/indexEngl.html">Manulex-infra</a></li>
             <li><a href="../morpho/indexEngl.html">Manulex-morpho</a></li>
             <li><a href="../eqolinfra/indexEngl.html">Eqol-infra</a></li>
           </ul>
@@ -62,62 +62,124 @@
             <br>
             <ul id="vertmenu">
               <li><a href="indexEngl.html">DESCRIPTION</a></li>
-              <li><a href="calculsEngl.html">UNDERSTANDING MANULEX-INFRA</a></li>
-              <li><a href="phonetiqueEngl.html">PHONETIC CODES</a></li>
+              <li><a href="understanding.html">UNDERSTANDING MANULEX-MORPHO</a></li>
+              <li><a href="phonetics.html">PHONETIC CODES</a></li>
+              <li><a href="morphology.html">MORPHOLOGY CODES</a></li>
               <li><a style="color:#2E86C1" href="changesEngl.html"><b>CHANGES
                     FROM VER.1</b></a></li>
-              <li><a href="telechargementEngl.html">DOWNLOAD</a></li>
+              <li><a href="download.html">DOWNLOAD</a></li>
             </ul>
           </td>
           <td aligne="left" width="90%">
-            <h2> Manulex-Infra</h2>
+            <h2> Manulex-Morpho</h2>
             <hr width="100%" color="2e86c1"> <br>
             <article> <titrepage>
-                <h1>Main changes in Manulex_Infra version 2</h1>
+                <h1>Main changes in <i>Manulex Morpho ver.2<br>
+                  </i></h1>
               </titrepage>
-              <p>• Separate G-Ph and Ph-G segmentations. In version 1 of
-                Manulex-infra, the description of grapho-phonological
-                associations focused mainly on grapheme-to-phoneme mappings
-                (reading direction). The same associations were then used to
-                analyze the associations between phonemes and graphemes (writing
-                direction). However, this procedure causes problems especially
-                -though not exclusively- when the words include silent letters.
-                Indeed, Ph-G consistency is defined as the probability of
-                writing a particular grapheme from the pronounced phoneme. In
-                the case of a silent grapheme, no phoneme is produced and it is
-                difficult to predict for sure what letter should be written
-                (unless one knows the exact spelling of the word). Therefore
-                associations must be described differently when considering
-                reading (G-Ph) and writing (Ph-G). This information is now
-                available in version 2 (see tab 'Understanding Manulex_Infra)..<br>
+              <p>Manulex-Morpho Version 2 brings major changes to version 1.
+                Changes are mostly the result of differences in (a) the
+                segmentations of G-Ph and Ph-G, (b) the positional coding of the
+                associations (initial, final or internal association), and (c)
+                the coding of Ph-G consistency when silent graphemes correspond
+                to nominal inflections (gender or number), as well as to
+                derivational / gender inflectional supports (e.g., the final 't'
+                in 'petit' vs. 'petite', the 'd' in 'bavard' vs. 'bavarde', see
+                'morphology codes' tab).<br>
                 <br>
-                • Analyses of the consistency and frequency of
-                grapho-phonological associations on the final rime unit of
-                words.<br>
+                • G-Ph (reading direction) and Ph-G (writing direction)
+                segmentations are different. In version 1 of Manulex_Morpho,
+                associations were conceived to reflect reading processes, from
+                grapheme to phoneme. We used the same associations to reflect
+                writing from phoneme and grapheme. This lead to problems in
+                calculating consistency, notably when words include final silent
+                letters. For example, the word&nbsp; 'nid' ends with a silent
+                'd'. The G-Ph association on the final grapheme is highly
+                consistent because final 'd' in most words is silent. By
+                contrast, the final 'd' of the word 'sud' is pronounced,
+                therefore the consistency of this association (grapheme 'd'
+                associated with the phoneme /d/) in word final position is low.
+                When considering writing, Ph-G associations for word final
+                silent letters are difficult to predict, because they are not
+                pronounced. The solution adopted in Manulex_Morpho v.2 is to
+                combine them with the last pronounced phoneme. For example, the
+                word 'renard’ ends in /R/ which is associated to the spelling
+                '-rd', and the final phoneme /R/ in 'gare' and 'terre' are
+                associated to&nbsp; '-re' and '-rre', respectively. The
+                pronunciation of 'renard' is thus compatible with the invented
+                spelling errors '*renarre', or '*renare'). The same coding
+                principle applies to silent letters that follow vowels;&nbsp;
+                'dans' is coded with /ã/-ans, and 'étang' with /ã/-ang. <br>
                 <br>
-                • Analyses of lexemes (lemmas)<br>
+                • Positional coding of associations. 1) Noun gender inflections
+                are coded as final graphemes whether or not they are followed by
+                a number inflection. 2) Similarly, verbal inflections are coded
+                as final graphemes, whether or not they are followed by a gender
+                or number inflection (e.g. the final -ées of plural feminine
+                past participles). However, the verbal inflections -ant, -it,
+                -is, and -t which mark the present and past participles, are
+                coded as internal when followed by a gender inflection.The
+                inflection modifies the pronunciation of the final consonant of
+                the verbal inflection (t, s) and places them in internal
+                position within the word. This exception is necessary to
+                preserve the consistency of pronunciations for verbal
+                inflections (e.g., -ant in 'glissant' and in 'glissante'). 3) In
+                order to process consonants and vowels the same way whether the
+                word is singular or plural, graphemes followed by a nominal
+                number inflection are coded as final as in: the final ‘d’ in
+                bavards' or 'renards'; the final 'et' in 'bouquets', and the
+                final 'a' in 'caméras'. This does not apply when graphemes are
+                followed by a vowel (as in the nominal gender inflection 'e'). <br>
                 <br>
-                • For each word the least consistent and the least frequent G-Ph
-                or Ph-G association. Note that the least consistent association
-                is not always the least frequent, and vice-versa. <br>
+                • Ph-G consistency (writing direction) when silent graphemes
+                correspond to nominal inflections (gender or number) or
+                derivation/flexion supports: nominal inflections are indicated
+                with code '3' and derivation/flexion supports with code '6' (see
+                tab 'morphological codes'). The consistency of the Ph-G
+                associations for nominal inflections is established at 100%
+                since the probability that the word ends with an 'e' is 100% if
+                the word is gender inflected, and the probability that the word
+                ends in 's' or 'x' is 100% if the word is number inflected. The
+                consistency of derivation/flexion supports for silent consonants
+                (e.g., 't' in ‘aliment’, 'd' in ‘grand') is also 100% since the
+                silent grapheme can be guessed based on derived words
+                ('alimentation', 'alimentaire', 'grandeur') or inflected words
+                (‘grande’). Guessing a silent grapheme is generally
+                straightforward for endings in -b (plomb), -d (grand), -g (long,
+                sang), -l (cristal, gentil), -p (camp), -t (absent) even though
+                the pronunciation of the grapheme may differ between
+                derived/inflected forms (e.g., 'g' pronounced /g/ in 'longueur'
+                and /ʒ/ in 'longer'). As for the final -f, they are changed into
+                /v/ during derivations/flexions (sportif - sportive, neuf -
+                neuve), as the presence of a -v in word finals is
+                phonotactically illegal in French. Final&nbsp; -s (gros, gris,
+                frais), in -x (choix, doux), and -z (riz) are associated with
+                the phonemes /s/, /z/, /S/ and the Ph-G consistencies are thus
+                estimated according to the probability of each of the silent
+                grapheme from the phoneme. For exemple, the /z/ in 'choisir'
+                /SwaziR/ is compatible with 'x' in the word 'choix', but 's'
+                (*chois) or 'z' (*choiz) are also possible because /z/ can occur
+                in derived/inflected forms of words ending in –z or –s
+                (riz-rizière, gris-grise). <br>
                 <br>
-                • Phonological codes and segmentations into graphemes and
-                phonemes were modified<br>
+                • For each word, the database provides the least consistent G-Ph
+                or Ph-G association, and the least frequent association. Note
+                that the least consistent association is not necessarily the
+                least frequent, and vice-versa. <br>
+                <br>
+                • Modifications and corrections of several phonological codes
+                and segmentations into graphemes and phonemes<br>
                 <br>
                 • The distinction between the two 'a' (/a/ of 'patte' and /ɑ/ of
                 'pâte') is removed from consistency calculation. They are
                 considered as the same phoneme.<br>
                 <br>
                 • Words including the grapheme 'ai' ('maison', 'laine') can be
-                transcribed as /E/ or /e/. Therefore consistency calculation
+                transcribed with /E/ or /e/. Therefore consistency calculation
                 consider the G-Ph association as the same. <br>
                 <br>
-                • The difference between the 'e' that are obligatorily
-                pronounced, obligatorily silent, or with optional schwa (see
-                'phonetic codes' tab) is now included in the analyses. <br>
-                <br>
-                • The syllabic segmentation of words in accordance with the
-                coding of silent or non silent 'e' is included in the analyses.<br>
+                • Introduction of differences between always pronounced, always
+                silent, and optional 'e' (see 'phonetic codes' tab) <br>
                 <br>
                 • The G-Ph consistency for the grapheme 'e' whose schwa is
                 optional ('gare', 'parle') is set to 100 since the 'e' may or
@@ -128,45 +190,34 @@
                 'baptême') are not present in the speech signal, and their Ph-G
                 consistency is therefore 0%.<br>
                 <br>
-                • Case of 'e' followed by two identical consonants. In version 1
-                of Manulex_infra, the orthographic sequences 'emm' and 'enn'
-                were coded as one single graphemic group while the 'e' followed
-                by other doublets ('err', 'ett') were coded as two (e.g. 'e.rr'
-                in 'terre'). The coding of 'emm' and 'enn' responded to the
-                segmentation principle aimed at highlighting inconsistencies in
-                word pronunciation, as these two orthographic sequences were
-                pronounced differently in 'antenne' and 'flemme' than in
-                'solennel' and 'patiemment'. However, given the high number of
-                adverbs in '-emment' sharing the association 'emm'-/am/
-                (patiemment, évidemment, récemment), a word like “femme” was
-                described as consistent. The coding for reading was standardized
-                by sorting 'e' when followed by two identical consonants as
-                .e[CC]. (with CC to indicate 2 identical consonants) so the word
-                'femme' is now coded as 'f.e[CC].mm.e'. This change in coding
-                now describes the word “femme” with a low consistency score
-                because 'e' followed by a doublet is usually pronounced /e/ or
-                /E/. This coding of 'e[CC]' only occurs for G-Ph associations
-                but not for Ph-G associations since, in French, nothing signals
-                the presence of the doublet when words are pronounced orally.
-                This coding of G-Ph associations with 'e[CC]' applies to all
-                words in order to highlight inconsistencies, thus also to words
-                such as 'ennui' coded 'e[CC]-@.nn-n.u-8.i-i'. <br>
+                • Cases where 'e' is followed by two identical consonants. The
+                coding for G-Ph associations, was standardized by sorting 'e'
+                when followed by two identical consonants as .e[CC]. (with CC to
+                indicate 2 identical consonants). For exemple, the word 'femme'
+                is now coded as 'f.e[CC].mm.e'. This change in coding now
+                describes the word 'femme' with a low consistency score because
+                'e' followed by a doublet is usually pronounced /e/ or /E/.
+                However, this only happens when the 'e' is not included in a
+                morphologically coded group (subscript '6'; derivation/flexion
+                support) such as in 'ancienne' where 'enn' is coded '6enn'. This
+                coding of 'e[CC]' is only done for G-Ph associations but not for
+                Ph-G associations since, in spoken French, double consonants are
+                not distinguishable from single consonants. The coding of G-Ph
+                associations with 'e[CC]' applies to all words in order to
+                highlight inconsistencies (thus also to words such as 'ennui'
+                coded 'e[CC]-@.nn-n.ui-8i') <br>
                 <br>
                 • Coding has been modified when -eill or -eil are not preceded
                 by 'u' ('abeille', 'bienveillant', 'sommeil'). 'eil' and 'eill'
                 are now single blocks where 'il' or 'ill' are always associated
                 with the semi-vowel /j/, never with the consonant /l/.<br>
                 <br>
-                • Verb endings in -ent are, when reading is considered (G-Ph),
-                segmented 'en.t'. It is comparable to the description of verb
-                endings in '-ant', '-ont', '-ons', ..., (an .t, on.t, on.s). <br>
-                <br>
                 • In order to eliminate some rare G-Ph or Ph-G associations,
-                proper names are excluded from the analyses. </p>
-              <br>
-              <br>
-              <br>
-              <br>
+                proper names are excluded from the analyses <br>
+                <br>
+                • The phonological structure CV and identification of consonant
+                clusters have been added.<br>
+              </p>
               <br>
               <br>
               <br>
