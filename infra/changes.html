@@ -7,9 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"
 
       rel="stylesheet">
-    <title>Manulex-Morpho v.2 - Modifications</title>
-    <meta name="description" content="Associations graphème-phonème à l'école élémentaire">
-    <meta name="keywords" content="Manulex-morpho,Manulex_morpho,Manulex-infra,Manulex,graphème-phonème,apprentissage de la lecture">
+    <title>Manulex-Infra v.2. Caractéristiques grapho-phonologiques des mots à
+      l'école élémentaire</title>
+    <meta name="description" content="Caractéristiques grapho-phonologiques des mots chez le jeune lecteur">
+    <meta name="keywords" content="Manulex-infra,Manulex_infra,Manulex,Manulex-infra v.2,apprentissage de la lecture,graphèmes-phonèmes">
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="../styles.css">
     <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
 
@@ -44,7 +45,7 @@
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="#">Bases▼</a>
           <ul>
-            <li><a href="../infra/index.html">Manulex-infra</a></li>
+            <li><a href="index.html">Manulex-infra</a></li>
             <li><a href="../morpho/index.html">Manulex-morpho</a></li>
             <li><a href="../eqolinfra/index.html">Eqol-infra</a></li>
           </ul>
@@ -64,157 +65,101 @@
             <br>
             <ul id="vertmenu">
               <li><a href="index.html">DESCRIPTION</a></li>
-              <li><a href="comprendre.html">COMPRENDRE MANULEX-MORPHO</a></li>
+              <li><a href="calculs.html">COMPRENDRE MANULEX-INFRA</a></li>
               <li><a href="phonetique.html">CODES PHONETIQUES</a></li>
-              <li><a href="morphologie.html">CODES MORPHOLOGIQUES</a></li>
               <li><a style="color:#2E86C1" href="changes.html"><b>MODIFICATIONS
                     VER.1</b></a></li>
               <li><a href="telechargement.html">TELECHARGEMENT</a></li>
             </ul>
           </td>
           <td aligne="left" width="90%">
-            <h2> Manulex-Morpho</h2>
+            <h2> Manulex-Infra</h2>
             <hr width="100%" color="2e86c1"> <br>
             <article> <titrepage>
-                <h1>Modifications principales par rapport à la version 1 de <i>Manulex
-                    Morpho</i></h1>
+                <h1>Modifications principales par rapport à la version 1</h1>
               </titrepage>
-              <p>Comme pour la base Manulex-Infra, la version 2 de
-                Manulex-Morpho apporte des modifications majeures par rapport à
-                la version 1. Une large partie résulte (a) de l’utilisation de
-                segmentations G-Ph et Ph-G distinctes, (b) de la manière dont le
-                codage positionnel des associations est réalisé (association
-                initiale, finale ou interne du mot), et (c) du codage de la
-                consistance Ph-G lorsque les graphèmes muets correspondent à des
-                flexions nominales (genre ou nombre), ainsi qu’à des supports de
-                dérivation/flexion de genre (par exemple, le ‘t’ de ‘petit’ vs.
-                ‘petite’, le ‘d’ de ‘bavard’ vs. ‘bavarde’); voir onglet ‘codes
-                morphologiques’.<br>
+              <p>• Segmentations G-Ph et Ph-G distinctes. Dans la version 1 de <i>Manulex_Infra</i>,
+                la description des associations graphème-phonème a initialement
+                été pensée dans le sens de la lecture, de G à Ph. Les mêmes
+                associations étaient exploitées pour analyser les associations
+                entre phonème et graphème (sens de l’écriture). Toutefois, la
+                notion de consistance réfère, dans le cas des associations Ph-G
+                à la probabilité de produire un graphème particulier à partir du
+                phonème prononcé. Lorsque le graphème n'est pas prononcé
+                (graphème "silencieux"), sa présence et son identité ne peuvent
+                être prédites (à moins de connaitre l'orthographe exacte du mot,
+                ou d'avoir la connaissance de la présence d'une lettre
+                silencieuse sans en connaitre nécessairement son identité). Les
+                descriptions des associations doivent donc être distinguées
+                selon que nous envisageons la lecture (G-Ph) et l’écriture
+                (Ph-G). Ceci est réalisé dans la version 2 (voir onglet
+                ‘Comprendre Manulex_Infra).<br>
                 <br>
-                • Segmentations G-Ph (lecture) et Ph-G (écriture) distinctes.
-                Dans la version 1 de Manulex_Morpho, la description de ces
-                associations a initialement été pensée dans le sens de la
-                lecture, du graphème au phonème. Les mêmes associations étaient
-                exploitées pour analyser celles entre phonème et graphème (sens
-                de l’écriture). Ce choix engendre des problèmes d'estimation des
-                consistances surtout –mais pas exclusivement- lorsque les mots
-                incluent des lettres silencieuses en finale. Par exemple, pour
-                la lecture, l’association G-Ph finale du mot ‘nid’ qui se
-                termine par un ‘d’ muet sera très consistante car le ‘d’ final
-                des mots est rarement prononcé. A l’inverse, le ‘d’ final du mot
-                ‘sud’ est prononcé, et la consistance de l’association entre le
-                graphème ‘d’ et le phonème /d/ en finale de mot sera donc
-                faible. La présence de lettres silencieuses en finales des mots
-                doit être considérée différemment dans les analyses concernant
-                l'écriture (associations Ph-G) dans la mesure où un graphème
-                silencieux (par exemple, le 'd' de 'foulard', /fulaR/) ne peut
-                être prédit (à moins d'en connaître l'existence). La solution
-                adoptée dans Manulex_Morpho v.2 pour décrire les associations
-                Ph-G est de rassembler les lettres silencieuses finales avec le
-                dernier phonème prononcé. Par exemple, dans le sens de
-                l’écriture, le mot ‘renard’ a un /R/ qui code '-rd', tout comme
-                les mots 'gare' et 'terre' dans lesquels /R/ code '-re' ou
-                '-rre' (la prononciation de ‘renard’ devient ainsi compatible
-                avec les erreurs de production orthographique ‘renarre’, ou
-                ‘renare’). Le principe de codage est similaire lorsque le
-                dernier graphème prononcé correspond à une voyelle: la finale de
-                'dans' et 'étang' est /ã/ pour '-ans' et '-ang'. <br>
+                • Ajout des analyses portant sur la consistance et la fréquence
+                des associations grapho-phonologiques portant sur l’unité de
+                rime finale des mots<br>
                 <br>
-                • Codage positionnel des associations. 1) Les flexions nominales
-                de genre, suivies ou non d'une flexion de nombre, sont codées
-                comme graphèmes finaux. 2) Similairement, les flexions verbales
-                sont codées comme graphèmes finaux, qu'elles soient ou non
-                suivies d'une flexion de genre ou nombre (par exemple, les
-                '-ées' des participes passés au féminin pluriel). Toutefois, les
-                flexions verbales en –ant, -it, -is, et –t des participes
-                présents et des participes passés sont codées comme internes
-                lorsque suivies d’une flexion de genre car cette dernière
-                modifie la prononciation de la consonne finale de la flexion
-                verbale (t, s).&nbsp; Cette exception est nécessaire afin de
-                préserver la consistance de prononciations des flexions verbales
-                (e. g.,' -ant' dans ‘glissant’ et dans ‘glissante’). 3) Les
-                autres graphèmes (consonantiques et vocaliques) non suivis d'une
-                voyelle (flexion nominale de genre 'e' ou non) mais suivis d'une
-                flexion nominale de nombre sont codés comme finaux (par exemple
-                'bavards' et 'buvards' avec 'd' comme graphème final; 'bouquets'
-                avec 'et' comme graphème final, 'caméras' avec 'a' comme
-                graphème final ). Ce choix assure le même traitement de ces
-                consonnes/voyelles selon que le nom soit au singulier ou au
-                pluriel. <br>
-                <br>
-                • Consistance Ph-G (pour l'écriture) lorsque les graphèmes
-                silencieux correspondent à des flexions nominales (genre ou
-                nombre) ou à des supports de dérivation/flexion: les flexions
-                nominales sont indicées avec le code ‘3’ et les supports de
-                dérivation/flexion avec le code ‘6’ (voir onglet ‘codes
-                morphologiques’). La consistance des associations Ph-G pour les
-                flexions nominales est établie à 100% puisque la probabilité que
-                le mot termine par un ‘e’ est de 100% si le mot est fléchi en
-                genre, et la probabilité que le mot termine en ‘s’ ou ‘x’ est de
-                100% si le mot est fléchi en nombre. La consistance des supports
-                de dérivation/flexion qui correspondent à des consonnes
-                silencieuses (e. g., ‘t’ dans ‘aliment’, ‘d’ dans ‘grand’) est
-                également fixée à 100% puisque le graphème silencieux peut être
-                prédit à partir de la connaissance des mots dérivés
-                (‘alimentation’, ‘alimentaire’, ‘grandeur’) ou des mots fléchis
-                (‘grande’). La prédiction des graphèmes silencieux est
-                généralement simple pour les finales en –b (plomb), -d (grand),
-                -g (long, sang), -l (cristal, gentil), -p (camp), -t (absent)
-                même si la prononciation du graphème peut différer entre les
-                formes dérivées/fléchies (par exemple ‘g’ prononcé /g/ dans
-                ‘longueur’ et /ʒ/ dans ‘longer’). Les graphèmes en –f sont,
-                quant à eux, transformés en /v/ lors des dérivations/flexions
-                (sportif – sportive, neuf – neuve), la présence d’un –v en
-                finale de mots étant illégale en français. Enfin, les finales en
-                –s (gros, gris, frais), en –x (choix, doux), et –z (riz) sont
-                associées aux phonèmes /s/, /z/, /S/ et les consistances Ph-G
-                sont donc estimées en fonction de la probabilité de chacun des
-                graphèmes silencieux à partir du phonème (e. g. le /z/ de
-                ‘choisir’ est compatible avec ‘x’ dans le mot ‘choix’, mais un
-                ‘s’ (*chois) ou un ‘z’ (*choiz) sont également possibles). <br>
+                • Ajout des analyses restreintes aux formes lexicales
+                correspondant aux lexèmes (lemmes), excluant donc les formes
+                fléchies <br>
                 <br>
                 • Ajout, pour chaque mot, de l’association G-Ph ou Ph-G la moins
-                consistante, et de l’association la moins fréquente. A noter que
-                l’association la moins consistante n’est pas nécessairement la
-                moins fréquente, et vice-versa. <br>
+                consistante, et la moins fréquente. A noter que l’association la
+                moins consistante n’est pas nécessairement la moins fréquente,
+                et vice-versa. <br>
                 <br>
                 • Modifications et corrections de plusieurs codes phonologiques
                 et segmentations en graphèmes et phonèmes<br>
                 <br>
-                • Suppression de la distinction entre les deux ‘a’ (/a/ de
+                • Suppression de la distinction entre les deux 'a' (/a/ de
                 ‘patte’ et /ɑ/ de ‘pâte’) dans le calcul des consistances<br>
                 <br>
                 • Les mots incluant le graphème ‘ai’ (‘maison’, ‘lainage’)
-                acceptent fréquemment la prononciation /E/ ou /e/. La
+                acceptent fréquemment la pronunciation /E/ ou /e/. La
                 consistance de l’association G-Ph ne tient plus compte de cette
                 distinction. <br>
                 <br>
-                • Introduction des différences entre les ‘e’ obligatoirement
-                prononcés, obligatoirement muets, ou optionnel (voir onglet
-                ‘codes phonétiques’) <br>
+                • Introduction des différences entre le 'e' obligatoirement
+                prononcé, obligatoirement muet, ou optionnel (voir onglet ‘codes
+                phonétiques’) <br>
                 <br>
-                • La consistance G-Ph pour le graphème ‘e’ qui correspond à un
-                schwa optionnel (‘reste’, ‘perle’) est fixée à 100 puisque le
-                ‘e’ peut ou non être prononcé. <br>
+                • Modifications de la segmentation syllabique des mots en accord
+                avec le codage des 'e' muets ou non muets. <br>
+                <br>
+                • La consistance G-Ph pour le graphème 'e' schwa optionnel
+                (‘gare’, ‘parle’) est fixée à 100 puisque le ‘e’ peut ou non
+                être prononcé. <br>
                 <br>
                 • Dans le cas des associations Ph-G seulement, les quelques
-                rares consonnes muettes en position interne (exemple : ‘m’ dans
-                ‘automne’, ‘p’ dans ‘baptême’) ne sont pas présentes dans le
-                signal de parole, et leur consistance Ph-G est donc de 0%<br>
+                rares consonnes silencieuses en position interne (exemple : ‘m’
+                dans ‘automne’, ‘p’ dans ‘baptême’) ne sont pas présentes dans
+                le signal de parole, et leur consistance Ph-G est donc de 0%<br>
                 <br>
-                • Cas du ‘e’ suivi par deux consonnes identiques. Le codage,
-                dans le sens de la lecture a été uniformisé en indiquant le ‘e’
-                suivi de deux consonnes identiques comme .e[CC]. (avec CC pour
-                signaler 2 consonnes identiques). Le mot ‘femme’ est donc codé
-                comme ‘f.e[CC].mm.e’. Sa consistance basse résulte du fait que
-                ‘e’ suivit d’une double consonne est généralement prononcé /e/
-                ou /E/. Toutefois, ceci n’est réalisée que lorsque le ‘e’ n’est
-                pas inclus dans un groupe codé morphologiquement (indice ‘6’ ;
-                support de dérivation/flexion) tel que dans ‘ancienne’ dont le
-                ‘enn’ est codé ‘6enn’. Ce codage des ‘e[CC]’ n’est réalisé que
+                • Cas du ‘e’ suivi de deux consonnes identiques. Dans la version
+                1 de <i>Manulex_infra</i>, les suites orthographiques ‘emm’ et
+                ‘enn’ étaient codées comme groupes graphémiques alors que, pour
+                les autres doublets (rr, tt), le 'e'&nbsp; étaient codés
+                séparément de consonnes qui suivent (par exemple ‘e.rr’ dans
+                ‘terre’). Ce codage particulier des ‘emm’ et ‘enn’ répondait au
+                principe de segmentation visant à mettre en évidence les
+                inconsistances dans la prononciation des mots, ces deux suites
+                orthographiques étant prononcées différemment dans ‘antenne’ et
+                ‘flemme’ que dans ‘solennel’ et ‘patiemment’. Toutefois, compte
+                tenu du nombre élevé d’adverbes en ‘emment’ partageant
+                l’association ‘emm’-/am/ (patiemment, évidemment, récemment), un
+                mot tel que ‘femme’ apparaissait comme consistant. Le codage,
+                dans le sens de la lecture a été uniformisé en renseignant le
+                ‘e’ suivit de deux consonnes identiques comme .e[CC]. (avec CC
+                pour signaler 2 consonnes identiques). Le mot ‘femme’ est donc
+                maintenant codé comme ‘f.e[CC].mm.e’. Sa consistance basse
+                résulte du fait que ‘e’ suivit d’un doublet est généralement
+                prononcé /e/ ou /E/. Ce codage des ‘e[CC]’ n’est réalisé que
                 pour les associations G-Ph mais pas dans les associations Ph-G
-                puisque, en Français, rien ne signale la présence du doublet
-                dans le signal de parole. <br>
+                puisque, en Français,&nbsp; rien ne signale la présence du
+                doublet dans le signal de parole. Ce codage des associations
+                G-Ph avec ‘e[CC]’ s’applique à tous les mots afin de faire
+                ressortir les inconsistances, donc aussi à des mots tel que
+                ‘ennui’ codé ‘e[CC]-@.nn-n.u-8.i-i’. <br>
                 <br>
                 • Cas des mots incluant –eill ou –eil non précédés de ‘u’ (
                 ‘abeille’, ‘bienveillant’, ‘sommeil’). Le codage a été modifié
@@ -222,13 +167,13 @@
                 ‘ill’ sont toujours associés à la semi-voyelle /j/, jamais à la
                 consonne /l/. <br>
                 <br>
-                • Afin d’éliminer quelques rares associations G-Ph ou Ph-G, les
-                noms propres sont exclus des analyses. <br>
+                • Les finales des verbes en –ent sont, dans le sens de la
+                lecture (G-Ph) segmentés ‘en.t’ dans la version 2 de <i>Manulex_Infra</i>.
+                Cette segmentation est comparable à celle des formes en ‘-ant’,
+                ‘-ont’, ‘-ons’, …, (an .t, on.t, on.s). <br>
                 <br>
-                • Ajout de la structure phonologique Consonne-Voyelle et
-                identification des clusters consonantiques<br>
-              </p>
-              <br>
+                • Afin d’éliminer quelques rares associations G-Ph ou Ph-G, les
+                noms propres sont exclus des analyses. </p>
               <br>
               <br>
               <br>
