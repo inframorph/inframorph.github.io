@@ -4,16 +4,13 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"
       rel="stylesheet">
     <title>Manulex-Morpho v.2 - Changes</title>
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="../styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
       href="../resolution_small.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
       href="../resolution_smallsmall.css">
   </head>
   <body>
@@ -22,8 +19,7 @@
         <tbody>
           <tr>
             <td align="left" width="6%">
-              <p class="style-langue"> <a href="index.html" style="text-decoration:none"><font
-
+              <p class="style-langue"> <a href="index.html" style="text-decoration:none"><font
                     color="#40a0bd">Français</font> </a></p>
             </td>
             <td align="center" width="69%"><span class="style-titre"><br>
@@ -167,7 +163,33 @@
                 that the least consistent association is not necessarily the
                 least frequent, and vice-versa. <br>
                 <br>
-                • Information theory measures (surprisal, entropy) are computed on G-Ph and Ph-G associations <br>
+                • Information theory measures (surprisal, entropy) are computed
+                on G-Ph and Ph-G associations. Entropy measures the level of
+                uncertainty associated with a probability distribution. It is
+                measured in information bits (0 or 1). Applied to G-Ph (or Ph-G)
+                mappings, entropy measures the uncertainty associated with the
+                pronunciation of a given grapheme (or the spelling associated
+                with a given phoneme). For example, the pronunciation
+                uncertainty of the grapheme 'v' (as in 'ville') is zero because
+                'v' is always pronounced /v/. Conversely, the pronunciation of
+                the grapheme 'eu' is uncertain because that grapheme is
+                sometimes pronounced as in the word 'deux' and sometimes as in
+                the word 'neuf'. The entropy of a grapheme (or phoneme) is a
+                function of both the number of possible pronunciations of the
+                grapheme (or spellings for the same phoneme) and the probability
+                (consistency) of each of the G-Ph (or Ph-G) mappings. The
+                minimum entropy value is 0 (no uncertainty), as is the case for
+                the grapheme 'v'. The maximum value of entropy (maximum
+                uncertainty) depends on both the number of alternatives and the
+                probability distribution of the mappings. The higher the entropy
+                value, the greater the uncertainty. For example, the entropy of
+                the phoneme /ɑ̃/ at the end of words is very high, as there are
+                a dozen possible spellings (en, an, aon, emps, ang…). To
+                calculate entropy, we need to calculate the 'surprise'
+                associated with each G-Ph (or Ph-G) association. It corresponds
+                to an inverse logarithmic transformation (in base 2) of the
+                probability (consistency) of each G-Ph (or Ph-G) association.
+                The more likely the association, the less surprising it is. <br>
                 <br>
                 • Modifications and corrections of several phonological codes
                 and segmentations into graphemes and phonemes<br>

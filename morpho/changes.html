@@ -4,18 +4,15 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"
       rel="stylesheet">
     <title>Manulex-Morpho v.2 - Modifications</title>
     <meta name="description" content="Associations graphème-phonème à l'école élémentaire">
     <meta name="keywords" content="Manulex-morpho,Manulex_morpho,Manulex-infra,Manulex,graphème-phonème,apprentissage de la lecture">
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="../styles.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)"
       href="../resolution_small.css">
-    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
-
+    <link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)"
       href="../resolution_smallsmall.css">
   </head>
   <body>
@@ -24,8 +21,7 @@
         <tbody>
           <tr>
             <td align="left" width="6%">
-              <p class="style-langue"> <a href="indexEngl.html" style="text-decoration:none"><font
-
+              <p class="style-langue"> <a href="indexEngl.html" style="text-decoration:none"><font
                     color="#40a0bd">English</font> </a></p>
             </td>
             <td align="center" width="69%"><span class="style-titre"><br>
@@ -178,7 +174,35 @@
                 l’association la moins consistante n’est pas nécessairement la
                 moins fréquente, et vice-versa. <br>
                 <br>
-                • Mesures de la théorie de l'information (surprise, entropie) calculées sur les associations G-Ph et Ph-G <br>
+                • Mesures de la théorie de l'information (surprise, entropie)
+                calculées sur les associations G-Ph et Ph-G. L'entropie mesure
+                le niveau d'incertitude associé à une distribution de
+                probabilité. Elle est mesurée en bit d’information (0 ou 1).
+                Dans le cas des associations G-Ph (ou Ph-G), l’entropie mesure
+                l’incertitude liée à la prononciation d’un graphème donné (ou à
+                l’orthographe associée à un phonème donné). Par exemple,
+                l’incertitude quant à la prononciation du graphème ‘v’ (comme
+                dans ‘ville’) est nulle puisque ‘v’ est toujours prononcé /v/.
+                Inversement, la prononciation du graphème ‘eu’ (neuf, deux) est
+                incertaine puisque ce graphème est parfois prononcé comme dans
+                le mot ‘deux’ et parfois comme dans le mot ‘neuf ‘. L’entropie
+                d’un graphème (ou phonème) est fonction à la fois du nombre de
+                prononciations possible du graphème (ou d’orthographes pour un
+                même phonème) et de la probabilité (consistance) de chacune des
+                associations G-Ph (ou Ph-G). La valeur minimale d’entropie est
+                égale à 0 (aucune incertitude) comme c’est le cas pour le
+                graphème ‘v’. La valeur maximale de l'entropie (incertitude
+                maximale) dépend du nombre d'alternatives et de la distribution
+                de probabilité des associations G-Ph ou Ph-G. Au plus la valeur
+                d’entropie est haute, au plus l’incertitude est donc élevée.
+                Ainsi, l’entropie du phonème /ɑ̃/ en finale de mot est très
+                élevée puisqu’une dizaine d’orthographes sont possibles (en, an,
+                aon, emps, ang…). Le calcul de l’entropie passe par le calcul de
+                la ‘surprise’ associée à chaque association G-Ph (ou Ph-G). Elle
+                correspond à une transformation logarithmique inverse (en base
+                2) de la probabilité (consistance) de chacune des associations.
+                La surprise est donc d’autant plus faible que l’association est
+                probable. <br>
                 <br>
                 • Modifications et corrections de plusieurs codes phonologiques
                 et segmentations en graphèmes et phonèmes<br>
